@@ -28,7 +28,7 @@
     NSLog(@"Pinch & Drag, onMatchResponse");
     switch (response.mOutcome) {
         case OutcomeOk:
-            NSLog(@"Matched in a group of %d%@", response.mGroupSize, @".");
+            NSLog(@"Matched in a group of %ld%@", (long)response.mGroupSize, @".");
             if (mMatchedDelegate != nil) {
                 [mMatchedDelegate onMatchedInGroup:response.mGroupId];
             }

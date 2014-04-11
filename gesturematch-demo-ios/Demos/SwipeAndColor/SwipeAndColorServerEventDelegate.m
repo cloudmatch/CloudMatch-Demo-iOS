@@ -25,7 +25,7 @@
             if (mMatchedDelegate != nil) {
                 [mMatchedDelegate onMatchedInGroup:response.mGroupId Size:response.mGroupSize MyId:response.mMyIdInGroup];
             }
-            NSLog(@"Matched in a group of %d%@", response.mGroupSize, @".");
+            NSLog(@"Matched in a group of %ld%@", (long)response.mGroupSize, @".");
             break;
         case OutcomeFail:
             switch (response.mResponseReason) {

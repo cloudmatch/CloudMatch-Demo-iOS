@@ -136,10 +136,10 @@
                 UIImage *imgObj = nil;
                 if (xGreater) {
                     // i'm right
-                    NSLog(@"matched in a group of %d, I'm right", response.mGroupSize);
+                    NSLog(@"matched in a group of %ld, I'm right", (long)response.mGroupSize);
                     imgObj = [UIImage imageNamed:@"split_image_2_1.png"];
                 } else {
-                    NSLog(@"matched in a group of %d, I'm left", response.mGroupSize);
+                    NSLog(@"matched in a group of %ld, I'm left", (long)response.mGroupSize);
                     imgObj = [UIImage imageNamed:@"split_image_2_2.png"];
                 }
                 

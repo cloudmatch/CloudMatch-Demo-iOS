@@ -82,7 +82,7 @@
     switch (response.mOutcome) {
         case OutcomeOk:
             mGroupId = response.mGroupId;
-            NSLog(@"Matched in a group of %d%@", response.mGroupSize, @".");
+            NSLog(@"Matched in a group of %ld%@", (long)response.mGroupSize, @".");
             break;
         case OutcomeFail:
             switch (response.mResponseReason) {
