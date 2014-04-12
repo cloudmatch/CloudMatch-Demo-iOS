@@ -97,7 +97,7 @@
     [self.view addSubview:self.mMyRectView];
     
     // remove it after a bit
-    [self performSelector:@selector(removeTinyRect:) withObject:nil afterDelay:3000];
+    [self performSelector:@selector(removeTinyRect:) withObject:nil afterDelay:3.0];
 
 }
 
