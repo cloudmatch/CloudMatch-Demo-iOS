@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <GestureMatchSDK/GestureMatchSDK.h>
+#import <CloudMatchSDK/CloudMatchSDK.h>
 #import "PinchAndDragDeliveryProtocol.h"
 #import "PinchAndDragMatchedProtocol.h"
 #import "PinchAndDragDeliveryHelper.h"
@@ -15,7 +15,7 @@
 #import "SquareView.h"
 #import "TinyCircleView.h"
 
-@interface PinchAndDragShapesView : UIView <GMOnMovementDelegate, PinchAndDragDeliveryProtocol, PinchAndDragMatchedProtocol>
+@interface PinchAndDragShapesView : UIView <CMOnMovementDelegate, PinchAndDragDeliveryProtocol, PinchAndDragMatchedProtocol>
 {
     double mMyCointossValue;
     PinchAndDragDeliveryHelper* mDeliveryHelper;

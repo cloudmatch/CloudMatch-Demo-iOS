@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <GestureMatchSDK/GestureMatchSDK.h>
+#import <CloudMatchSDK/CloudMatchSDK.h>
 #import "MyRectView.h"
 
-@interface PinchAndViewUIViewController : UIViewController <GMOnMovementDelegate, GMOnServerEventDelegate>
+@interface PinchAndViewUIViewController : UIViewController <CMOnMovementDelegate, CMOnServerEventDelegate>
 {
     UIImageView *imageView;
     NSInteger mMyDeviceId;

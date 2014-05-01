@@ -43,9 +43,9 @@ static NSString* const ROTATION_MESSAGE = @"rotation";
     serverEventDelegate = [[SwipeAndColorServerEventDelegate alloc] init];
     [serverEventDelegate setOnMatchedDelegate:self];
     
-    [[GMGestureMatchClient sharedInstance] attachToView:drawingView withMovementDelegate:drawingView criteria:kGMCriteriaSwipe];
-    [[GMGestureMatchClient sharedInstance] setServerEventDelegate:serverEventDelegate];
-    [[GMGestureMatchClient sharedInstance] connect];
+    [[CMCloudMatchClient sharedInstance] attachToView:drawingView withMovementDelegate:drawingView criteria:kCMCriteriaSwipe];
+    [[CMCloudMatchClient sharedInstance] setServerEventDelegate:serverEventDelegate];
+    [[CMCloudMatchClient sharedInstance] connect];
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,7 +63,7 @@ static NSString* const ROTATION_MESSAGE = @"rotation";
     [dict setObject:@"1" forKey:ROTATION_MESSAGE];
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict options:0 error:nil];
     NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-    [[GMGestureMatchClient sharedInstance] deliverPayload:jsonString toGroup:mGroupId];
+    [[CMCloudMatchClient sharedInstance] deliverPayload:jsonString toGroup:mGroupId];
 }
 
 - (void)onMatchedInGroup:(NSString*)groupId Size:(NSInteger)size MyId:(NSInteger)myId{

@@ -7,7 +7,7 @@
 //
 
 #import "GMDViewController.h"
-#import <GestureMatchSDK/GestureMatchSDK.h>
+#import <CloudMatchSDK/CloudMatchSDK.h>
 
 @interface GMDViewController ()
 

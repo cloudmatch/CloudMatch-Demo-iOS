@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <GestureMatchSDK/GestureMatchSDK.h>
+#import <CloudMatchSDK/CloudMatchSDK.h>
 #import "SwipeAndColorMatchedProtocol.h"
 
-@interface SwipeAndColorServerEventDelegate : NSObject <GMOnServerEventDelegate>
+@interface SwipeAndColorServerEventDelegate : NSObject <CMOnServerEventDelegate>
 {
     id<SwipeAndColorMatchedProtocol> mMatchedDelegate;
 }

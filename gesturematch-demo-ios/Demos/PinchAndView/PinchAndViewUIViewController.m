@@ -25,9 +25,9 @@
     
     NSLog(@"PinchAndView Demo starting");
     
-    [[GMGestureMatchClient sharedInstance] attachToView:self.view withMovementDelegate:self criteria:kGMCriteriaPinch];
-    [[GMGestureMatchClient sharedInstance] setServerEventDelegate:self];
-    [[GMGestureMatchClient sharedInstance] connect];
+    [[CMCloudMatchClient sharedInstance] attachToView:self.view withMovementDelegate:self criteria:kCMCriteriaPinch];
+    [[CMCloudMatchClient sharedInstance] setServerEventDelegate:self];
+    [[CMCloudMatchClient sharedInstance] connect];
     
 }
 
@@ -39,7 +39,7 @@
 
 - (void)dealloc {
     NSLog(@"dealloc.");
-    [[GMGestureMatchClient sharedInstance] detachFromView:self.view];
+    [[CMCloudMatchClient sharedInstance] detachFromView:self.view];
 }
 
 -(void)dismissViews:(id)sender {
@@ -115,7 +115,7 @@
 
 # pragma mark - onServerEventDelegate
 
-- (void)onMatchResponse:(GMMatchResponse*)response
+- (void)onMatchResponse:(CMMatchResponse*)response
 {
     switch (response.mOutcome) {
         case OutcomeOk:
@@ -128,8 +128,8 @@
                 }
             }
             
-            GMDeviceInScheme* myself = [response.mPositionScheme getDeviceForId:response.mMyIdInGroup];
-            GMDeviceInScheme* other = [response.mPositionScheme getDeviceForId:otherDeviceId];
+            CMDeviceInScheme* myself = [response.mPositionScheme getDeviceForId:response.mMyIdInGroup];
+            CMDeviceInScheme* other = [response.mPositionScheme getDeviceForId:otherDeviceId];
             
             if (myself != nil && other != nil) {
                 BOOL xGreater = myself.mPosition.x > other.mPosition.x;
@@ -178,27 +178,27 @@
     
 }
 
-- (void)onLeaveGroupResponse:(GMLeaveGroupResponse*)response
+- (void)onLeaveGroupResponse:(CMLeaveGroupResponse*)response
 {
     
 }
 
-- (void)onDisconnectResponse:(GMDisconnectResponse*)response
+- (void)onDisconnectResponse:(CMDisconnectResponse*)response
 {
     
 }
 
-- (void)onDeliveryResponse:(GMDeliveryResponse*)response
+- (void)onDeliveryResponse:(CMDeliveryResponse*)response
 {
     
 }
 
-- (void)onMatcheeLeftMessage:(GMMatcheeLeftMessage*)message
+- (void)onMatcheeLeftMessage:(CMMatcheeLeftMessage*)message
 {
     
 }
 
-- (void)onMatcheeDelivery:(GMMatcheeDelivery*)delivery
+- (void)onMatcheeDelivery:(CMMatcheeDelivery*)delivery
 {
     
 }

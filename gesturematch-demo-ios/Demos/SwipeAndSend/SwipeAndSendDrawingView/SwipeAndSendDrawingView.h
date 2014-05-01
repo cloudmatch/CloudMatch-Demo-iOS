@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <GestureMatchSDK/GestureMatchSDK.h>
+#import <CloudMatchSDK/CloudMatchSDK.h>
 
-@interface SwipeAndSendDrawingView : UIView <GMOnMovementDelegate> {
+@interface SwipeAndSendDrawingView : UIView <CMOnMovementDelegate> {
     UIBezierPath *myPath;
 }
 

@@ -23,7 +23,7 @@
 
 # pragma mark - onServerEventDelegate
 
-- (void)onMatchResponse:(GMMatchResponse*)response
+- (void)onMatchResponse:(CMMatchResponse*)response
 {
     NSLog(@"Pinch & Drag, onMatchResponse");
     switch (response.mOutcome) {
@@ -54,27 +54,27 @@
     }
 }
 
-- (void)onLeaveGroupResponse:(GMLeaveGroupResponse*)response
+- (void)onLeaveGroupResponse:(CMLeaveGroupResponse*)response
 {
 
 }
 
-- (void)onDisconnectResponse:(GMDisconnectResponse*)response
+- (void)onDisconnectResponse:(CMDisconnectResponse*)response
 {
 
 }
 
-- (void)onDeliveryResponse:(GMDeliveryResponse*)response
+- (void)onDeliveryResponse:(CMDeliveryResponse*)response
 {
 
 }
 
-- (void)onMatcheeLeftMessage:(GMMatcheeLeftMessage*)message
+- (void)onMatcheeLeftMessage:(CMMatcheeLeftMessage*)message
 {
 
 }
 
-- (void)onMatcheeDelivery:(GMMatcheeDelivery*)delivery
+- (void)onMatcheeDelivery:(CMMatcheeDelivery*)delivery
 {
     NSLog(@"Pinch & Drag, matchee delivery, payload: %@", delivery.mPayload);
 

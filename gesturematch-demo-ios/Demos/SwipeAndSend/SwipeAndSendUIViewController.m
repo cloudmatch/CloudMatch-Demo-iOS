@@ -36,9 +36,9 @@
 
     mGroupId = @"";
 
-    [[GMGestureMatchClient sharedInstance] attachToView:drawingView withMovementDelegate:drawingView criteria:kGMCriteriaSwipe];
-    [[GMGestureMatchClient sharedInstance] setServerEventDelegate:self];
-    [[GMGestureMatchClient sharedInstance] connect];
+    [[CMCloudMatchClient sharedInstance] attachToView:drawingView withMovementDelegate:drawingView criteria:kCMCriteriaSwipe];
+    [[CMCloudMatchClient sharedInstance] setServerEventDelegate:self];
+    [[CMCloudMatchClient sharedInstance] connect];
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,7 +50,7 @@
 
 - (void)dealloc {
     NSLog(@"dealloc.");
-    [[GMGestureMatchClient sharedInstance] detachFromView:self.view];
+    [[CMCloudMatchClient sharedInstance] detachFromView:self.view];
 }
 
 
@@ -71,12 +71,12 @@
 - (IBAction)sendButtonAction:(id)sender {
     NSString *textToSend = [[NSString alloc] initWithString: self.textToSend.text];
     NSLog(@"going to send: %@ to group %@", textToSend, mGroupId);
-    [[GMGestureMatchClient sharedInstance] deliverPayload:textToSend toGroup:mGroupId];
+    [[CMCloudMatchClient sharedInstance] deliverPayload:textToSend toGroup:mGroupId];
 }
 
 # pragma mark - onServerEventDelegate
 
-- (void)onMatchResponse:(GMMatchResponse*)response
+- (void)onMatchResponse:(CMMatchResponse*)response
 {
     NSLog(@"onMatchResponse");
     switch (response.mOutcome) {
@@ -105,27 +105,27 @@
     }
 }
 
-- (void)onLeaveGroupResponse:(GMLeaveGroupResponse*)response
+- (void)onLeaveGroupResponse:(CMLeaveGroupResponse*)response
 {
 
 }
 
-- (void)onDisconnectResponse:(GMDisconnectResponse*)response
+- (void)onDisconnectResponse:(CMDisconnectResponse*)response
 {
 
 }
 
-- (void)onDeliveryResponse:(GMDeliveryResponse*)response
+- (void)onDeliveryResponse:(CMDeliveryResponse*)response
 {
 
 }
 
-- (void)onMatcheeLeftMessage:(GMMatcheeLeftMessage*)message
+- (void)onMatcheeLeftMessage:(CMMatcheeLeftMessage*)message
 {
 
 }
 
-- (void)onMatcheeDelivery:(GMMatcheeDelivery*)delivery
+- (void)onMatcheeDelivery:(CMMatcheeDelivery*)delivery
 {
     self.receivedText.text = delivery.mPayload;
 }

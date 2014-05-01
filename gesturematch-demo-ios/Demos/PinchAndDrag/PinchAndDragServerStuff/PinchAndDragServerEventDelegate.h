@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <GestureMatchSDK/GestureMatchSDK.h>
+#import <CloudMatchSDK/CloudMatchSDK.h>
 #import "PinchAndDragMatchedProtocol.h"
 #import "PinchAndDragDeliveryProtocol.h"
 
-@interface PinchAndDragServerEventDelegate : NSObject <GMOnServerEventDelegate>
+@interface PinchAndDragServerEventDelegate : NSObject <CMOnServerEventDelegate>
 {
     id<PinchAndDragDeliveryProtocol> mDeliveryDelegate;
     id<PinchAndDragMatchedProtocol> mMatchedDelegate;

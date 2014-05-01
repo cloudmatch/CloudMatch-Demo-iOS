@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <GestureMatchSDK/GestureMatchSDK.h>
+#import <CloudMatchSDK/CloudMatchSDK.h>
 #import "SwipeAndSendDrawingView.h"
 
-@interface SwipeAndSendUIViewController : UIViewController <GMOnServerEventDelegate>
+@interface SwipeAndSendUIViewController : UIViewController <CMOnServerEventDelegate>
 {
     NSString* mGroupId;
     SwipeAndSendDrawingView *drawingView;

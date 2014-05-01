@@ -33,9 +33,9 @@
     [mServerEventDelegate setMatchedDelegate:mShapesView];
     [mServerEventDelegate setDeliveryDelegate:mShapesView];
     
-    [[GMGestureMatchClient sharedInstance] attachToView:mShapesView withMovementDelegate:mShapesView criteria:kGMCriteriaPinch];
-    [[GMGestureMatchClient sharedInstance] setServerEventDelegate:mServerEventDelegate];
-    [[GMGestureMatchClient sharedInstance] connect];
+    [[CMCloudMatchClient sharedInstance] attachToView:mShapesView withMovementDelegate:mShapesView criteria:kCMCriteriaPinch];
+    [[CMCloudMatchClient sharedInstance] setServerEventDelegate:mServerEventDelegate];
+    [[CMCloudMatchClient sharedInstance] connect];
 }
 
 - (void)didReceiveMemoryWarning

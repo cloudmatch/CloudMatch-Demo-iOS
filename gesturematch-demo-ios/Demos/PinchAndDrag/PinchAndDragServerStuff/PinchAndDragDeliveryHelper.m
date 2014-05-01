@@ -8,7 +8,7 @@
 
 #import "PinchAndDragDeliveryHelper.h"
 #import "PinchAndDragConsts.h"
-#import <GestureMatchSDK/GestureMatchSDK.h>
+#import <CloudMatchSDK/CloudMatchSDK.h>
 
 @implementation PinchAndDragDeliveryHelper
 
@@ -16,21 +16,21 @@
 {
     // prepare JSON and deliver it
     NSString* toSend = [PinchAndDragDeliveryHelper getJSONStringFromKey:SHAPE_DRAG AndObject:shape];
-    [[GMGestureMatchClient sharedInstance] deliverPayload:toSend toGroup:groupId];
+    [[CMCloudMatchClient sharedInstance] deliverPayload:toSend toGroup:groupId];
 }
 
 -(void)sendShapeReceivedAck:(NSString*)shape ToGroup:(NSString*)groupId
 {
     // prepare JSON and deliver it
     NSString* toSend = [PinchAndDragDeliveryHelper getJSONStringFromKey:SHAPE_ACQUISITION_ACK AndObject:shape];
-    [[GMGestureMatchClient sharedInstance] deliverPayload:toSend toGroup:groupId];
+    [[CMCloudMatchClient sharedInstance] deliverPayload:toSend toGroup:groupId];
 }
 
 -(void)sendShapeDragStopped:(NSString*)groupId
 {
     // prepare JSON and deliver it
     NSString* toSend = [PinchAndDragDeliveryHelper getJSONStringFromKey:SHAPE_DRAG_STOPPED AndObject:@"0"];
-    [[GMGestureMatchClient sharedInstance] deliverPayload:toSend toGroup:groupId];
+    [[CMCloudMatchClient sharedInstance] deliverPayload:toSend toGroup:groupId];
 }
 
 -(void)sendCointoss:(double)cointoss ToGroup:(NSString*)groupId
@@ -38,7 +38,7 @@
     // prepare JSON and deliver it
     NSNumber* cointossNumber = [[NSNumber alloc] initWithDouble:cointoss];
     NSString* toSend = [PinchAndDragDeliveryHelper getJSONStringFromKey:COIN_TOSS AndObject:cointossNumber];
-    [[GMGestureMatchClient sharedInstance] deliverPayload:toSend toGroup:groupId];
+    [[CMCloudMatchClient sharedInstance] deliverPayload:toSend toGroup:groupId];
 }
 
 +(NSString*)getJSONStringFromKey:(NSString*)key AndObject:(NSObject*)value
