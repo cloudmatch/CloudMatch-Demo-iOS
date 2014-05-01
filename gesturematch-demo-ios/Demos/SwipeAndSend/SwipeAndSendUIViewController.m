@@ -35,9 +35,13 @@
     [self.view sendSubviewToBack:drawingView];
 
     mGroupId = @"";
+    
+    // TODO: if you want to build this, request a free pair of apiKey / appId on cloudmatch.io!
+    NSString* myApiKey = @"DUMMY-API-KEY";
+    NSString* myAppId = @"DUMMY-APP-ID";
 
     [[CMCloudMatchClient sharedInstance] attachToView:drawingView withMovementDelegate:drawingView criteria:kCMCriteriaSwipe];
-    [[CMCloudMatchClient sharedInstance] setServerEventDelegate:self];
+    [[CMCloudMatchClient sharedInstance] setServerEventDelegate:self apiKey:myApiKey appId:myAppId];
     [[CMCloudMatchClient sharedInstance] connect];
 }
 
@@ -142,7 +146,7 @@
 
 - (void)onConnectionClosedWithWSReason:(NSString*)WSreason
 {
-
+    NSLog(@"Swipe & Send, onConnectionClosed, reason %@", WSreason);
 }
 
 - (void)onConnectionError:(NSError*)error

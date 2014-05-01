@@ -25,8 +25,12 @@
     
     NSLog(@"PinchAndView Demo starting");
     
+    // TODO: if you want to build this, request a free pair of apiKey / appId on cloudmatch.io!
+    NSString* myApiKey = @"DUMMY-API-KEY";
+    NSString* myAppId = @"DUMMY-APP-ID";
+    
     [[CMCloudMatchClient sharedInstance] attachToView:self.view withMovementDelegate:self criteria:kCMCriteriaPinch];
-    [[CMCloudMatchClient sharedInstance] setServerEventDelegate:self];
+    [[CMCloudMatchClient sharedInstance] setServerEventDelegate:self apiKey:myApiKey appId:myAppId];
     [[CMCloudMatchClient sharedInstance] connect];
     
 }
