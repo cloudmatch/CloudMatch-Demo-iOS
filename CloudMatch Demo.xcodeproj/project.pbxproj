@@ -26,10 +26,10 @@
 		3E81BD8018CF75D000CC3D89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E81BD7F18CF75D000CC3D89 /* UIKit.framework */; };
 		3E81BD8618CF75D000CC3D89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E81BD8418CF75D000CC3D89 /* InfoPlist.strings */; };
 		3E81BD8818CF75D000CC3D89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81BD8718CF75D000CC3D89 /* main.m */; };
-		3E81BD8C18CF75D000CC3D89 /* GMDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81BD8B18CF75D000CC3D89 /* GMDAppDelegate.m */; };
+		3E81BD8C18CF75D000CC3D89 /* CMDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81BD8B18CF75D000CC3D89 /* CMDAppDelegate.m */; };
 		3E81BD8F18CF75D000CC3D89 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E81BD8D18CF75D000CC3D89 /* Main_iPhone.storyboard */; };
 		3E81BD9218CF75D000CC3D89 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E81BD9018CF75D000CC3D89 /* Main_iPad.storyboard */; };
-		3E81BD9518CF75D000CC3D89 /* GMDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81BD9418CF75D000CC3D89 /* GMDViewController.m */; };
+		3E81BD9518CF75D000CC3D89 /* CMDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81BD9418CF75D000CC3D89 /* CMDViewController.m */; };
 		3E81BD9718CF75D000CC3D89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E81BD9618CF75D000CC3D89 /* Images.xcassets */; };
 		3E81BD9E18CF75D000CC3D89 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E81BD9D18CF75D000CC3D89 /* XCTest.framework */; };
 		3E81BD9F18CF75D000CC3D89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E81BD7B18CF75D000CC3D89 /* Foundation.framework */; };
@@ -95,12 +95,12 @@
 		3E81BD8518CF75D000CC3D89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3E81BD8718CF75D000CC3D89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3E81BD8918CF75D000CC3D89 /* CloudMatch Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudMatch Demo-Prefix.pch"; sourceTree = "<group>"; };
-		3E81BD8A18CF75D000CC3D89 /* GMDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMDAppDelegate.h; sourceTree = "<group>"; };
-		3E81BD8B18CF75D000CC3D89 /* GMDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMDAppDelegate.m; sourceTree = "<group>"; };
+		3E81BD8A18CF75D000CC3D89 /* CMDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMDAppDelegate.h; sourceTree = "<group>"; };
+		3E81BD8B18CF75D000CC3D89 /* CMDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMDAppDelegate.m; sourceTree = "<group>"; };
 		3E81BD8E18CF75D000CC3D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		3E81BD9118CF75D000CC3D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		3E81BD9318CF75D000CC3D89 /* GMDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMDViewController.h; sourceTree = "<group>"; };
-		3E81BD9418CF75D000CC3D89 /* GMDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMDViewController.m; sourceTree = "<group>"; };
+		3E81BD9318CF75D000CC3D89 /* CMDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMDViewController.h; sourceTree = "<group>"; };
+		3E81BD9418CF75D000CC3D89 /* CMDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMDViewController.m; sourceTree = "<group>"; };
 		3E81BD9618CF75D000CC3D89 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3E81BD9C18CF75D000CC3D89 /* CloudMatch DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CloudMatch DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E81BD9D18CF75D000CC3D89 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -298,12 +298,12 @@
 			isa = PBXGroup;
 			children = (
 				3E81BDC218CF795200CC3D89 /* Demos */,
-				3E81BD8A18CF75D000CC3D89 /* GMDAppDelegate.h */,
-				3E81BD8B18CF75D000CC3D89 /* GMDAppDelegate.m */,
+				3E81BD8A18CF75D000CC3D89 /* CMDAppDelegate.h */,
+				3E81BD8B18CF75D000CC3D89 /* CMDAppDelegate.m */,
 				3E81BD8D18CF75D000CC3D89 /* Main_iPhone.storyboard */,
 				3E81BD9018CF75D000CC3D89 /* Main_iPad.storyboard */,
-				3E81BD9318CF75D000CC3D89 /* GMDViewController.h */,
-				3E81BD9418CF75D000CC3D89 /* GMDViewController.m */,
+				3E81BD9318CF75D000CC3D89 /* CMDViewController.h */,
+				3E81BD9418CF75D000CC3D89 /* CMDViewController.m */,
 				3E81BD9618CF75D000CC3D89 /* Images.xcassets */,
 				3E81BD8218CF75D000CC3D89 /* Supporting Files */,
 			);
@@ -467,12 +467,12 @@
 				3E36731B18E197210061ADFA /* CircleView.m in Sources */,
 				3E81BD8818CF75D000CC3D89 /* main.m in Sources */,
 				3E19B5EC18E03B2800CA6947 /* ColorTables.m in Sources */,
-				3E81BD9518CF75D000CC3D89 /* GMDViewController.m in Sources */,
+				3E81BD9518CF75D000CC3D89 /* CMDViewController.m in Sources */,
 				3E36730F18E175D20061ADFA /* PinchAndDragDeliveryHelper.m in Sources */,
 				3E36730518E1706F0061ADFA /* PinchAndDragShapesView.m in Sources */,
 				3ED8EB9F18F12E26005B40FC /* TinyCircleView.m in Sources */,
 				3E19B5E818E034EF00CA6947 /* SwipeAndColorDrawingView.m in Sources */,
-				3E81BD8C18CF75D000CC3D89 /* GMDAppDelegate.m in Sources */,
+				3E81BD8C18CF75D000CC3D89 /* CMDAppDelegate.m in Sources */,
 				3E6A9DE818D4A87A00E3290A /* PinchAndViewUIViewController.m in Sources */,
 				3E36731518E17AEC0061ADFA /* PinchAndDragConsts.m in Sources */,
 				3E6A9DE418D4A86300E3290A /* SwipeAndSendUIViewController.m in Sources */,

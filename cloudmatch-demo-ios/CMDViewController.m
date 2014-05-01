@@ -1,19 +1,19 @@
 //
-//  LBGMDViewController.m
-//  gesturematch-demo-ios
+//  CMDViewController.m
+//  CloudMatch Demo
 //
 //  Created by Fabio Tiriticco on 11/03/2014.
-//  Copyright (c) 2014 Fabio Tiriticco, Fabway. All rights reserved.
+//  Copyright (c) 2014 cloudmatch.io All rights reserved.
 //
 
-#import "GMDViewController.h"
+#import "CMDViewController.h"
 #import <CloudMatchSDK/CloudMatchSDK.h>
 
-@interface GMDViewController ()
+@interface CMDViewController ()
 
 @end
 
-@implementation GMDViewController
+@implementation CMDViewController
 
 - (void)viewDidLoad
 {

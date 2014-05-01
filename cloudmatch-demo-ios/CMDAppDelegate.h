@@ -1,14 +1,14 @@
 //
-//  LBGMDAppDelegate.h
-//  gesturematch-demo-ios
+//  CMDAppDelegate.h
+//  CloudMatch Demo
 //
 //  Created by Fabio Tiriticco on 11/03/2014.
-//  Copyright (c) 2014 Fabio Tiriticco, Fabway. All rights reserved.
+//  Copyright (c) 2014 cloudmatch.io All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface GMDAppDelegate : UIResponder <UIApplicationDelegate>
+@interface CMDAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
