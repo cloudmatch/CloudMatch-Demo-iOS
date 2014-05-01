@@ -1,9 +1,9 @@
 //
 //  SwipeAndColorServerEventDelegate.m
-//  gesturematch-demo-ios
+//  CloudMatch Demo
 //
 //  Created by Fabio Tiriticco on 24/03/2014.
-//  Copyright (c) 2014 Fabio Tiriticco, Fabway. All rights reserved.
+//  Copyright (c) 2014 cloudmatch.io All rights reserved.
 //
 
 #import "SwipeAndColorServerEventDelegate.h"

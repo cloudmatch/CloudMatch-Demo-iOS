@@ -1,9 +1,9 @@
 //
 //  gesturematch_demo_iosTests.m
-//  gesturematch-demo-iosTests
+//  CloudMatch DemoTests
 //
 //  Created by Fabio Tiriticco on 11/03/2014.
-//  Copyright (c) 2014 FabioTiriticco, Fabway. All rights reserved.
+//  Copyright (c) 2014 cloudmatch.io . All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
