@@ -285,14 +285,14 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="For more information about CloudMatch and how you can use it in your projects, visit:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Z71-uP-6uC">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="For more information about CloudMatch and how you can use it in your projects, visit:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Z71-uP-6uC">
                                 <rect key="frame" x="40" y="258" width="240" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="http://cloudmatch.io" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ySo-6y-90K">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="http://cloudmatch.io" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ySo-6y-90K">
                                 <rect key="frame" x="40" y="404" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
