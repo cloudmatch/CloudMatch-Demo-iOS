@@ -9,6 +9,26 @@
 #import "PinchAndViewUIViewController.h"
 #import "PinchAndViewDeliveryHelper.h"
 
+@interface PinchAndViewUIViewController ()
+{
+    UIImageView* imageView;
+    NSInteger mMyDeviceId;
+    NSInteger mOtherDeviceId;
+    UIButton* button1;
+    UIImage* mImgObj;
+    
+    CGSize mViewDimensions;
+    NSInteger mHalfScreenY;
+    NSInteger mHalfScreenX;
+    NSInteger mPointEndY;
+    NSInteger mPointEndX;
+    NSInteger mIVWidth;
+    NSInteger mIVHeigth;
+    NSInteger mIVTopX;
+    NSInteger mIVTopY;
+}
+@end
+
 @implementation PinchAndViewUIViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
