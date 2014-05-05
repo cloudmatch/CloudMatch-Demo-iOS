@@ -32,13 +32,6 @@ DerivedData
 .env
 secret
 
-#Pictures, useful in case covered by copyright
-#So that won't be pushed to github
-**Default*png
-**Icon*png
-**iTunes*png
-**AppIcon*png
-
 #patch files
 **.patch
 
