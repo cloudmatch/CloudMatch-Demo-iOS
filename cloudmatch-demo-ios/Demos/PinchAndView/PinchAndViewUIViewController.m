@@ -7,6 +7,7 @@
 //
 
 #import "PinchAndViewUIViewController.h"
+#import "PinchAndViewDeliveryHelper.h"
 
 @implementation PinchAndViewUIViewController
 
@@ -29,6 +30,10 @@
     NSString* myApiKey = @"DUMMY-API-KEY";
     NSString* myAppId = @"DUMMY-APP-ID";
     
+    mViewDimensions = self.view.bounds.size;
+    mHalfScreenX = mViewDimensions.width / 2;
+    mHalfScreenY = mViewDimensions.height / 2;
+    
     [[CMCloudMatchClient sharedInstance] attachToView:self.view withMovementDelegate:self criteria:kCMCriteriaPinch];
     [[CMCloudMatchClient sharedInstance] setServerEventDelegate:self apiKey:myApiKey appId:myAppId];
     [[CMCloudMatchClient sharedInstance] connect];
@@ -47,14 +52,11 @@
 }
 
 -(void)dismissViews:(id)sender {
-    NSLog(@"works");
     if (imageView != nil) {
-        NSLog(@"removing drawingView");
         [imageView removeFromSuperview];
         imageView = nil;
     }
     if (button1 != nil) {
-        NSLog(@"removing button");
         [button1 removeFromSuperview];
         button1 = nil;
     }
@@ -76,33 +78,77 @@
     [self.mMyRectView removeFromSuperview];
 }
 
+-(void)displayImage
+{
+    
+    if (mImgObj != nil) {
+        // the frame here below should adapt to the device that this app is running on
+        imageView = [[UIImageView alloc]initWithFrame:CGRectMake(mIVTopX, mIVTopY, mIVWidth, mIVHeigth)];
+        [imageView setContentMode:UIViewContentModeScaleToFill];
+        [imageView setImage:mImgObj];
+        [self.view insertSubview:imageView atIndex:0];
+        
+        if (button1 == nil) {
+            button1 = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, mViewDimensions.width, mViewDimensions.height)];
+            [button1 addTarget:self action:@selector(dismissViews:) forControlEvents:UIControlEventTouchDown];
+            [self.view addSubview:button1];
+        }
+    }
+}
+
 #pragma mark - onMovementDelegate
 
 -(void)onMovementDetection:(Movement)movement swipeType:(SwipeType)swipeType pointStart:(CGPoint)pointStart pointEnd:(CGPoint)pointEnd
 {
-    // cancel previous stuff
-    [self.mMyRectView removeFromSuperview];
-    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(removeTinyRect:) object:nil];
+    NSLog(@"onMovementDetection: (%f, %f) to (%f, %f)", pointStart.x, pointStart.y, pointEnd.x, pointEnd.y);
     
-    NSInteger size = 20;
-    CGFloat rectX = pointEnd.x;
-    switch (movement) {
-        case kMovementInnerRight:
-            rectX = rectX - size;
-            break;
-            
-        default:
-            break;
+    mPointEndX = pointEnd.x;
+    mPointEndY = pointEnd.y;
+    
+    // this block takes care of the little shape to show
+    {
+        // cancel previous stuff
+        [self.mMyRectView removeFromSuperview];
+        [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(removeTinyRect:) object:nil];
+        
+        NSInteger size = 20;
+        CGFloat rectX = pointEnd.x;
+        switch (movement) {
+            case kMovementInnerRight:
+                rectX = rectX - size;
+                break;
+            default:
+                break;
+        }
+        
+
+        CGRect rect = CGRectMake(rectX, pointEnd.y, size, size);
+        self.mMyRectView = [[MyRectView alloc] initWithFrame:rect];
+        [self.view addSubview:self.mMyRectView];
+        
+        // remove it after a bit
+        [self performSelector:@selector(removeTinyRect:) withObject:nil afterDelay:3.0];
     }
     
-    NSLog(@"onMovementDetection: (%f, %f) to (%f, %f)", pointStart.x, pointStart.y, pointEnd.x, pointEnd.y);
-    CGRect rect = CGRectMake(rectX, pointEnd.y, size, size);
-    self.mMyRectView = [[MyRectView alloc] initWithFrame:rect];
-    [self.view addSubview:self.mMyRectView];
-    
-    // remove it after a bit
-    [self performSelector:@selector(removeTinyRect:) withObject:nil afterDelay:3.0];
-
+    // this block takes care of the screen position calculations
+    {
+        if (mPointEndY > mHalfScreenY) {
+            mIVHeigth = (mViewDimensions.height - mPointEndY) * 2;
+            mIVTopY = mViewDimensions.height - mIVHeigth;
+        } else {
+            mIVHeigth = mPointEndY * 2;
+            mIVTopY = 0;
+        }
+        
+        mIVWidth = mIVHeigth * mViewDimensions.width / mViewDimensions.height;
+        if (mPointEndX > mHalfScreenX) {
+            mIVTopX = mViewDimensions.width - mIVWidth;
+        } else {
+            mIVTopX = 0;
+        }
+        
+        NSLog(@"iv height: %ld, width: %ld, y: %ld, x: %ld", (long)mIVHeigth, (long)mIVWidth, (long)mIVTopY, (long)mIVTopX);
+    }
 }
 
 - (BOOL)isSwipeValid
@@ -137,29 +183,17 @@
             
             if (myself != nil && other != nil) {
                 BOOL xGreater = myself.mPosition.x > other.mPosition.x;
-                UIImage *imgObj = nil;
+                mImgObj = nil;
                 if (xGreater) {
                     // i'm right
                     NSLog(@"matched in a group of %ld, I'm right", (long)response.mGroupSize);
-                    imgObj = [UIImage imageNamed:@"split_image_2_1.png"];
+                    mImgObj = [UIImage imageNamed:@"split_image_2_1.png"];
                 } else {
                     NSLog(@"matched in a group of %ld, I'm left", (long)response.mGroupSize);
-                    imgObj = [UIImage imageNamed:@"split_image_2_2.png"];
+                    mImgObj = [UIImage imageNamed:@"split_image_2_2.png"];
                 }
                 
-                if (imgObj != nil) {
-                    // the frame here below should adapt to the device that this app is running on
-                    imageView=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
-                    [imageView setContentMode:UIViewContentModeScaleToFill];
-                    [imageView setImage:imgObj];
-                    [self.view addSubview:imageView];
-                    
-                    if (button1 == nil) {
-                        button1 = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
-                        [button1 addTarget:self action:@selector(dismissViews:) forControlEvents:UIControlEventTouchDown];
-                        [self.view addSubview:button1];
-                    }
-                }
+                [PinchAndViewDeliveryHelper sendImageHeight:mIVHeigth  ToGroup:response.mGroupId];
             }
         }
             break;
@@ -175,11 +209,8 @@
                     break;
             }
         default:
-            
             break;
     }
-    
-    
 }
 
 - (void)onLeaveGroupResponse:(CMLeaveGroupResponse*)response
@@ -204,7 +235,29 @@
 
 - (void)onMatcheeDelivery:(CMMatcheeDelivery*)delivery
 {
+    NSLog(@"Pinch & Drag, matchee delivery, payload: %@", delivery.mPayload);
     
+    NSData *jsonData = [delivery.mPayload dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
+    if ([jsonDict objectForKey:IMAGE_HEIGHT] != nil) {
+        NSNumber *othersImageHeight = [jsonDict objectForKey:IMAGE_HEIGHT];
+        
+        // do I need to resize or reposition my image calculations?
+        if ([othersImageHeight integerValue] > mIVHeigth) {
+            // display it as it is
+            [self displayImage];
+        } else {
+            // recalculate positions and dimensions
+            {
+                mIVHeigth = [othersImageHeight integerValue];
+                mIVWidth = mIVHeigth * mViewDimensions.width / mViewDimensions.height;
+                mIVTopY = mPointEndY - (mIVHeigth / 2);
+                mIVTopX = mPointEndX > mHalfScreenX ? mViewDimensions.width - mIVWidth : 0;
+                
+                [self displayImage];
+            }
+        }
+    }
 }
 
 - (void)onMatcheeDeliveryProgress:(NSInteger)progress forDeliveryId:(NSString*)deliveryId
@@ -219,7 +272,7 @@
 
 - (void)onConnectionClosedWithWSReason:(NSString*)WSreason
 {
-    
+    NSLog(@"onConnectionClosedWithWSReason %@", WSreason);
 }
 
 - (void)onConnectionError:(NSError*)error

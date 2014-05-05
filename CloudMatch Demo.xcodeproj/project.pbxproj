@@ -10,6 +10,7 @@
 		3E19B5E418E034D800CA6947 /* SwipeAndSendDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E19B5E318E034D800CA6947 /* SwipeAndSendDrawingView.m */; };
 		3E19B5E818E034EF00CA6947 /* SwipeAndColorDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E19B5E718E034EF00CA6947 /* SwipeAndColorDrawingView.m */; };
 		3E19B5EC18E03B2800CA6947 /* ColorTables.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E19B5EB18E03B2800CA6947 /* ColorTables.m */; };
+		3E2BF2D519178EC300FBA6F2 /* PinchAndViewDeliveryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2BF2D419178EC300FBA6F2 /* PinchAndViewDeliveryHelper.m */; };
 		3E2E136718DF300400633A71 /* split_image_2_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E136518DF300400633A71 /* split_image_2_1.png */; };
 		3E2E136818DF300400633A71 /* split_image_2_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E136618DF300400633A71 /* split_image_2_2.png */; };
 		3E36730218E170580061ADFA /* PinchAndDragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E36730118E170580061ADFA /* PinchAndDragViewController.m */; };
@@ -64,6 +65,8 @@
 		3E19B5E718E034EF00CA6947 /* SwipeAndColorDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeAndColorDrawingView.m; sourceTree = "<group>"; };
 		3E19B5EA18E03B2800CA6947 /* ColorTables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorTables.h; sourceTree = "<group>"; };
 		3E19B5EB18E03B2800CA6947 /* ColorTables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorTables.m; sourceTree = "<group>"; };
+		3E2BF2D319178EC300FBA6F2 /* PinchAndViewDeliveryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchAndViewDeliveryHelper.h; sourceTree = "<group>"; };
+		3E2BF2D419178EC300FBA6F2 /* PinchAndViewDeliveryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinchAndViewDeliveryHelper.m; sourceTree = "<group>"; };
 		3E2E136518DF300400633A71 /* split_image_2_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = split_image_2_1.png; sourceTree = "<group>"; };
 		3E2E136618DF300400633A71 /* split_image_2_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = split_image_2_2.png; sourceTree = "<group>"; };
 		3E36730018E170580061ADFA /* PinchAndDragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchAndDragViewController.h; sourceTree = "<group>"; };
@@ -255,6 +258,8 @@
 				3E6A9DE718D4A87A00E3290A /* PinchAndViewUIViewController.m */,
 				3ED8EBA218F13EE2005B40FC /* MyRectView.h */,
 				3ED8EBA318F13EE2005B40FC /* MyRectView.m */,
+				3E2BF2D319178EC300FBA6F2 /* PinchAndViewDeliveryHelper.h */,
+				3E2BF2D419178EC300FBA6F2 /* PinchAndViewDeliveryHelper.m */,
 			);
 			path = PinchAndView;
 			sourceTree = "<group>";
@@ -479,6 +484,7 @@
 				3EBE8EBC18E02F970038823A /* SwipeAndColorDemoViewController.m in Sources */,
 				3E36730218E170580061ADFA /* PinchAndDragViewController.m in Sources */,
 				3EBE8EC318E0311C0038823A /* SwipeAndColorServerEventDelegate.m in Sources */,
+				3E2BF2D519178EC300FBA6F2 /* PinchAndViewDeliveryHelper.m in Sources */,
 				3E6EFF6F18E1FBE4003ABD68 /* SquareView.m in Sources */,
 				3E36730C18E175AC0061ADFA /* PinchAndDragServerEventDelegate.m in Sources */,
 				3ED8EBA418F13EE2005B40FC /* MyRectView.m in Sources */,
