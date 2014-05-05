@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E02DFB61917D8D8008DEA48 /* CMDAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E02DFB51917D8D8008DEA48 /* CMDAboutViewController.m */; };
 		3E19B5E418E034D800CA6947 /* SwipeAndSendDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E19B5E318E034D800CA6947 /* SwipeAndSendDrawingView.m */; };
 		3E19B5E818E034EF00CA6947 /* SwipeAndColorDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E19B5E718E034EF00CA6947 /* SwipeAndColorDrawingView.m */; };
 		3E19B5EC18E03B2800CA6947 /* ColorTables.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E19B5EB18E03B2800CA6947 /* ColorTables.m */; };
@@ -59,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E02DFB41917D8D8008DEA48 /* CMDAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDAboutViewController.h; sourceTree = "<group>"; };
+		3E02DFB51917D8D8008DEA48 /* CMDAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDAboutViewController.m; sourceTree = "<group>"; };
 		3E19B5E218E034D800CA6947 /* SwipeAndSendDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeAndSendDrawingView.h; sourceTree = "<group>"; };
 		3E19B5E318E034D800CA6947 /* SwipeAndSendDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeAndSendDrawingView.m; sourceTree = "<group>"; };
 		3E19B5E618E034EF00CA6947 /* SwipeAndColorDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeAndColorDrawingView.h; sourceTree = "<group>"; };
@@ -154,6 +157,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E02DFB31917D8C2008DEA48 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				3E02DFB41917D8D8008DEA48 /* CMDAboutViewController.h */,
+				3E02DFB51917D8D8008DEA48 /* CMDAboutViewController.m */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
 		3E19B5E118E034D800CA6947 /* SwipeAndSendDrawingView */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +314,7 @@
 		3E81BD8118CF75D000CC3D89 /* cloudmatch-demo-ios */ = {
 			isa = PBXGroup;
 			children = (
+				3E02DFB31917D8C2008DEA48 /* About */,
 				3E81BDC218CF795200CC3D89 /* Demos */,
 				3E81BD8A18CF75D000CC3D89 /* CMDAppDelegate.h */,
 				3E81BD8B18CF75D000CC3D89 /* CMDAppDelegate.m */,
@@ -475,6 +488,7 @@
 				3E81BD9518CF75D000CC3D89 /* CMDViewController.m in Sources */,
 				3E36730F18E175D20061ADFA /* PinchAndDragDeliveryHelper.m in Sources */,
 				3E36730518E1706F0061ADFA /* PinchAndDragShapesView.m in Sources */,
+				3E02DFB61917D8D8008DEA48 /* CMDAboutViewController.m in Sources */,
 				3ED8EB9F18F12E26005B40FC /* TinyCircleView.m in Sources */,
 				3E19B5E818E034EF00CA6947 /* SwipeAndColorDrawingView.m in Sources */,
 				3E81BD8C18CF75D000CC3D89 /* CMDAppDelegate.m in Sources */,
