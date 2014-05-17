@@ -134,6 +134,7 @@ static double const DRAGGING_CANCEL_INTERVAL = 3.0; // seconds
                 } else if ([self.mShapeBeingDraggedOnOtherSide isEqualToString:SQUARE_SHAPE]){
                     self.mMovingView = self.mSquareView;
                 }
+                self.mMovingView.center = location;
                 [self animateView:self.mMovingView toPosition:location];
                 self.mMovingView.hidden = NO;
                 self.mMovingShape = self.mShapeBeingDraggedOnOtherSide;
