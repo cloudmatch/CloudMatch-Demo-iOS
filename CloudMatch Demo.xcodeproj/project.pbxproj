@@ -43,11 +43,11 @@
 		3E81BDB818CF75FE00CC3D89 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E81BDB718CF75FE00CC3D89 /* libicucore.dylib */; };
 		3E81BDBA18CF760400CC3D89 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E81BDB918CF760400CC3D89 /* Security.framework */; };
 		3E81BDBC18CF760900CC3D89 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E81BDBB18CF760900CC3D89 /* CoreLocation.framework */; };
-		3E9663031912833B000C5CBA /* CloudMatchSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E9663021912833B000C5CBA /* CloudMatchSDK.framework */; };
 		3EBE8EBC18E02F970038823A /* SwipeAndColorDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE8EBB18E02F970038823A /* SwipeAndColorDemoViewController.m */; };
 		3EBE8EC318E0311C0038823A /* SwipeAndColorServerEventDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE8EC218E0311C0038823A /* SwipeAndColorServerEventDelegate.m */; };
 		3ED8EB9F18F12E26005B40FC /* TinyCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8EB9E18F12E26005B40FC /* TinyCircleView.m */; };
 		3ED8EBA418F13EE2005B40FC /* MyRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8EBA318F13EE2005B40FC /* MyRectView.m */; };
+		3EDA1D3A19274D610008B285 /* CloudMatchSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDA1D3919274D610008B285 /* CloudMatchSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,7 +120,6 @@
 		3E81BDB718CF75FE00CC3D89 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		3E81BDB918CF760400CC3D89 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		3E81BDBB18CF760900CC3D89 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		3E9663021912833B000C5CBA /* CloudMatchSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CloudMatchSDK.framework; sourceTree = "<group>"; };
 		3EBE8EBA18E02F970038823A /* SwipeAndColorDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeAndColorDemoViewController.h; sourceTree = "<group>"; };
 		3EBE8EBB18E02F970038823A /* SwipeAndColorDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeAndColorDemoViewController.m; sourceTree = "<group>"; };
 		3EBE8EC118E0311C0038823A /* SwipeAndColorServerEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeAndColorServerEventDelegate.h; sourceTree = "<group>"; };
@@ -129,6 +128,7 @@
 		3ED8EB9E18F12E26005B40FC /* TinyCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TinyCircleView.m; sourceTree = "<group>"; };
 		3ED8EBA218F13EE2005B40FC /* MyRectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRectView.h; sourceTree = "<group>"; };
 		3ED8EBA318F13EE2005B40FC /* MyRectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRectView.m; sourceTree = "<group>"; };
+		3EDA1D3919274D610008B285 /* CloudMatchSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CloudMatchSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E81BDBC18CF760900CC3D89 /* CoreLocation.framework in Frameworks */,
-				3E9663031912833B000C5CBA /* CloudMatchSDK.framework in Frameworks */,
+				3EDA1D3A19274D610008B285 /* CloudMatchSDK.framework in Frameworks */,
 				3E81BDBA18CF760400CC3D89 /* Security.framework in Frameworks */,
 				3E81BDB818CF75FE00CC3D89 /* libicucore.dylib in Frameworks */,
 				3E81BDB618CF75F600CC3D89 /* CFNetwork.framework in Frameworks */,
@@ -303,7 +303,7 @@
 		3E81BD7A18CF75D000CC3D89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3E9663021912833B000C5CBA /* CloudMatchSDK.framework */,
+				3EDA1D3919274D610008B285 /* CloudMatchSDK.framework */,
 				3E81BDBB18CF760900CC3D89 /* CoreLocation.framework */,
 				3E81BDB918CF760400CC3D89 /* Security.framework */,
 				3E81BDB718CF75FE00CC3D89 /* libicucore.dylib */,

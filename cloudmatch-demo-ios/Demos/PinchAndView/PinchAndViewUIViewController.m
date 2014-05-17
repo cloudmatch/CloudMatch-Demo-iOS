@@ -238,11 +238,6 @@
     
 }
 
-- (void)onDisconnectResponse:(CMDisconnectResponse*)response
-{
-    
-}
-
 - (void)onDeliveryResponse:(CMDeliveryResponse*)response
 {
     
