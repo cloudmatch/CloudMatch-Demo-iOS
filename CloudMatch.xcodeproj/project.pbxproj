@@ -13,6 +13,7 @@
 		3E19B5E818E034EF00CA6947 /* SwipeAndColorDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E19B5E718E034EF00CA6947 /* SwipeAndColorDrawingView.m */; };
 		3E19B5EC18E03B2800CA6947 /* ColorTables.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E19B5EB18E03B2800CA6947 /* ColorTables.m */; };
 		3E19EACC1927AA31009534C6 /* Eerste.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 3E19EACB1927AA31009534C6 /* Eerste.gpx */; };
+		3E19EAD11927B1C2009534C6 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E19EAD01927B1C2009534C6 /* Roboto-Regular.ttf */; };
 		3E2BF2D519178EC300FBA6F2 /* PinchAndViewDeliveryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2BF2D419178EC300FBA6F2 /* PinchAndViewDeliveryHelper.m */; };
 		3E2E136718DF300400633A71 /* split_image_2_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E136518DF300400633A71 /* split_image_2_1.png */; };
 		3E2E136818DF300400633A71 /* split_image_2_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E136618DF300400633A71 /* split_image_2_2.png */; };
@@ -74,6 +75,7 @@
 		3E19B5EA18E03B2800CA6947 /* ColorTables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorTables.h; sourceTree = "<group>"; };
 		3E19B5EB18E03B2800CA6947 /* ColorTables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorTables.m; sourceTree = "<group>"; };
 		3E19EACB1927AA31009534C6 /* Eerste.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Eerste.gpx; sourceTree = "<group>"; };
+		3E19EAD01927B1C2009534C6 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		3E2BF2D319178EC300FBA6F2 /* PinchAndViewDeliveryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchAndViewDeliveryHelper.h; sourceTree = "<group>"; };
 		3E2BF2D419178EC300FBA6F2 /* PinchAndViewDeliveryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinchAndViewDeliveryHelper.m; sourceTree = "<group>"; };
 		3E2E136518DF300400633A71 /* split_image_2_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = split_image_2_1.png; sourceTree = "<group>"; };
@@ -100,14 +102,14 @@
 		3E6EFF6D18E1FBE4003ABD68 /* SquareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareView.h; sourceTree = "<group>"; };
 		3E6EFF6E18E1FBE4003ABD68 /* SquareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareView.m; sourceTree = "<group>"; };
 		3E709B8319275C2D0022A4D4 /* CoffeeRoom.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CoffeeRoom.gpx; sourceTree = "<group>"; };
-		3E81BD7818CF75D000CC3D89 /* CloudMatch Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CloudMatch Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E81BD7818CF75D000CC3D89 /* CloudMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E81BD7B18CF75D000CC3D89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3E81BD7D18CF75D000CC3D89 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3E81BD7F18CF75D000CC3D89 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		3E81BD8318CF75D000CC3D89 /* CloudMatch Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CloudMatch Demo-Info.plist"; sourceTree = "<group>"; };
+		3E81BD8318CF75D000CC3D89 /* CloudMatch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CloudMatch-Info.plist"; sourceTree = "<group>"; };
 		3E81BD8518CF75D000CC3D89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3E81BD8718CF75D000CC3D89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3E81BD8918CF75D000CC3D89 /* CloudMatch Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudMatch Demo-Prefix.pch"; sourceTree = "<group>"; };
+		3E81BD8918CF75D000CC3D89 /* CloudMatch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudMatch-Prefix.pch"; sourceTree = "<group>"; };
 		3E81BD8A18CF75D000CC3D89 /* CMDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMDAppDelegate.h; sourceTree = "<group>"; };
 		3E81BD8B18CF75D000CC3D89 /* CMDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMDAppDelegate.m; sourceTree = "<group>"; };
 		3E81BD8E18CF75D000CC3D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -115,7 +117,7 @@
 		3E81BD9318CF75D000CC3D89 /* CMDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMDViewController.h; sourceTree = "<group>"; };
 		3E81BD9418CF75D000CC3D89 /* CMDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMDViewController.m; sourceTree = "<group>"; };
 		3E81BD9618CF75D000CC3D89 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3E81BD9C18CF75D000CC3D89 /* CloudMatch DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CloudMatch DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E81BD9C18CF75D000CC3D89 /* CloudMatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudMatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E81BD9D18CF75D000CC3D89 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3E81BDA518CF75D000CC3D89 /* CloudMatch DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CloudMatch DemoTests-Info.plist"; sourceTree = "<group>"; };
 		3E81BDA718CF75D000CC3D89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -191,6 +193,15 @@
 				3E19B5EB18E03B2800CA6947 /* ColorTables.m */,
 			);
 			path = SwipeAndColorDrawingView;
+			sourceTree = "<group>";
+		};
+		3E19EACF1927B1C2009534C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3E19EAD01927B1C2009534C6 /* Roboto-Regular.ttf */,
+			);
+			name = Resources;
+			path = "cloudmatch-demo-ios/Resources";
 			sourceTree = "<group>";
 		};
 		3E2E136418DF300400633A71 /* images */ = {
@@ -288,6 +299,7 @@
 		3E81BD6F18CF75D000CC3D89 = {
 			isa = PBXGroup;
 			children = (
+				3E19EACF1927B1C2009534C6 /* Resources */,
 				3E19EACB1927AA31009534C6 /* Eerste.gpx */,
 				3E709B8319275C2D0022A4D4 /* CoffeeRoom.gpx */,
 				3E81BD8118CF75D000CC3D89 /* cloudmatch-demo-ios */,
@@ -300,8 +312,8 @@
 		3E81BD7918CF75D000CC3D89 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3E81BD7818CF75D000CC3D89 /* CloudMatch Demo.app */,
-				3E81BD9C18CF75D000CC3D89 /* CloudMatch DemoTests.xctest */,
+				3E81BD7818CF75D000CC3D89 /* CloudMatch.app */,
+				3E81BD9C18CF75D000CC3D89 /* CloudMatchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -342,10 +354,10 @@
 		3E81BD8218CF75D000CC3D89 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3E81BD8318CF75D000CC3D89 /* CloudMatch Demo-Info.plist */,
+				3E81BD8318CF75D000CC3D89 /* CloudMatch-Info.plist */,
 				3E81BD8418CF75D000CC3D89 /* InfoPlist.strings */,
 				3E81BD8718CF75D000CC3D89 /* main.m */,
-				3E81BD8918CF75D000CC3D89 /* CloudMatch Demo-Prefix.pch */,
+				3E81BD8918CF75D000CC3D89 /* CloudMatch-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -395,9 +407,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3E81BD7718CF75D000CC3D89 /* CloudMatch Demo */ = {
+		3E81BD7718CF75D000CC3D89 /* CloudMatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3E81BDAD18CF75D000CC3D89 /* Build configuration list for PBXNativeTarget "CloudMatch Demo" */;
+			buildConfigurationList = 3E81BDAD18CF75D000CC3D89 /* Build configuration list for PBXNativeTarget "CloudMatch" */;
 			buildPhases = (
 				3E81BD7418CF75D000CC3D89 /* Sources */,
 				3E81BD7518CF75D000CC3D89 /* Frameworks */,
@@ -407,14 +419,14 @@
 			);
 			dependencies = (
 			);
-			name = "CloudMatch Demo";
+			name = CloudMatch;
 			productName = "gesturematch-demo-ios";
-			productReference = 3E81BD7818CF75D000CC3D89 /* CloudMatch Demo.app */;
+			productReference = 3E81BD7818CF75D000CC3D89 /* CloudMatch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3E81BD9B18CF75D000CC3D89 /* CloudMatch DemoTests */ = {
+		3E81BD9B18CF75D000CC3D89 /* CloudMatchTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3E81BDB018CF75D000CC3D89 /* Build configuration list for PBXNativeTarget "CloudMatch DemoTests" */;
+			buildConfigurationList = 3E81BDB018CF75D000CC3D89 /* Build configuration list for PBXNativeTarget "CloudMatchTests" */;
 			buildPhases = (
 				3E81BD9818CF75D000CC3D89 /* Sources */,
 				3E81BD9918CF75D000CC3D89 /* Frameworks */,
@@ -425,9 +437,9 @@
 			dependencies = (
 				3E81BDA218CF75D000CC3D89 /* PBXTargetDependency */,
 			);
-			name = "CloudMatch DemoTests";
+			name = CloudMatchTests;
 			productName = "gesturematch-demo-iosTests";
-			productReference = 3E81BD9C18CF75D000CC3D89 /* CloudMatch DemoTests.xctest */;
+			productReference = 3E81BD9C18CF75D000CC3D89 /* CloudMatchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -445,7 +457,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3E81BD7318CF75D000CC3D89 /* Build configuration list for PBXProject "CloudMatch Demo" */;
+			buildConfigurationList = 3E81BD7318CF75D000CC3D89 /* Build configuration list for PBXProject "CloudMatch" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -458,8 +470,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3E81BD7718CF75D000CC3D89 /* CloudMatch Demo */,
-				3E81BD9B18CF75D000CC3D89 /* CloudMatch DemoTests */,
+				3E81BD7718CF75D000CC3D89 /* CloudMatch */,
+				3E81BD9B18CF75D000CC3D89 /* CloudMatchTests */,
 			);
 		};
 /* End PBXProject section */
@@ -475,6 +487,7 @@
 				3E81BD8F18CF75D000CC3D89 /* Main_iPhone.storyboard in Resources */,
 				3E2E136718DF300400633A71 /* split_image_2_1.png in Resources */,
 				3E709B8419275C2D0022A4D4 /* CoffeeRoom.gpx in Resources */,
+				3E19EAD11927B1C2009534C6 /* Roboto-Regular.ttf in Resources */,
 				3E81BD8618CF75D000CC3D89 /* InfoPlist.strings in Resources */,
 				3E19EACC1927AA31009534C6 /* Eerste.gpx in Resources */,
 			);
@@ -533,7 +546,7 @@
 /* Begin PBXTargetDependency section */
 		3E81BDA218CF75D000CC3D89 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3E81BD7718CF75D000CC3D89 /* CloudMatch Demo */;
+			target = 3E81BD7718CF75D000CC3D89 /* CloudMatch */;
 			targetProxy = 3E81BDA118CF75D000CC3D89 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -657,10 +670,10 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cloudmatch-demo-ios/CloudMatch Demo-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/cloudmatch-demo-ios/CloudMatch Demo-Info.plist";
+				GCC_PREFIX_HEADER = "cloudmatch-demo-ios/CloudMatch-Prefix.pch";
+				INFOPLIST_FILE = "cloudmatch-demo-ios/CloudMatch-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "CloudMatch Demo";
+				PRODUCT_NAME = CloudMatch;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -676,10 +689,10 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cloudmatch-demo-ios/CloudMatch Demo-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/cloudmatch-demo-ios/CloudMatch Demo-Info.plist";
+				GCC_PREFIX_HEADER = "cloudmatch-demo-ios/CloudMatch-Prefix.pch";
+				INFOPLIST_FILE = "cloudmatch-demo-ios/CloudMatch-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "CloudMatch Demo";
+				PRODUCT_NAME = CloudMatch;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -700,7 +713,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "gesturematch-demo-iosTests/CloudMatch DemoTests-Info.plist";
-				PRODUCT_NAME = "CloudMatch DemoTests";
+				PRODUCT_NAME = CloudMatchTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -718,7 +731,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gesturematch-demo-ios/gesturematch-demo-ios-Prefix.pch";
 				INFOPLIST_FILE = "gesturematch-demo-iosTests/CloudMatch DemoTests-Info.plist";
-				PRODUCT_NAME = "CloudMatch DemoTests";
+				PRODUCT_NAME = CloudMatchTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -727,7 +740,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3E81BD7318CF75D000CC3D89 /* Build configuration list for PBXProject "CloudMatch Demo" */ = {
+		3E81BD7318CF75D000CC3D89 /* Build configuration list for PBXProject "CloudMatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3E81BDAB18CF75D000CC3D89 /* Debug */,
@@ -736,7 +749,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3E81BDAD18CF75D000CC3D89 /* Build configuration list for PBXNativeTarget "CloudMatch Demo" */ = {
+		3E81BDAD18CF75D000CC3D89 /* Build configuration list for PBXNativeTarget "CloudMatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3E81BDAE18CF75D000CC3D89 /* Debug */,
@@ -745,7 +758,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3E81BDB018CF75D000CC3D89 /* Build configuration list for PBXNativeTarget "CloudMatch DemoTests" */ = {
+		3E81BDB018CF75D000CC3D89 /* Build configuration list for PBXNativeTarget "CloudMatchTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3E81BDB118CF75D000CC3D89 /* Debug */,

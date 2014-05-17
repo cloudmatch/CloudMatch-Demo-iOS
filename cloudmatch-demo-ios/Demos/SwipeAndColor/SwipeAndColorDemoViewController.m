@@ -78,6 +78,7 @@ static NSString* const ROTATION_MESSAGE = @"rotation";
     mGroupId = groupId;
     
     [self setNewColor];
+    [drawingView clearScreen];
     
     if (mChangeColorButton == nil) {
         mChangeColorButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];

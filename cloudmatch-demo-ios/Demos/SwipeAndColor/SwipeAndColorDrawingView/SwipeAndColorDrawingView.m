@@ -28,7 +28,7 @@
 - (void)drawRect:(CGRect)rect
 {
     // Drawing code
-    [[UIColor greenColor] setStroke];
+    [[UIColor blackColor] setStroke];
     [myPath strokeWithBlendMode:kCGBlendModeNormal alpha:1.0];
 }
 

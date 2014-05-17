@@ -81,7 +81,7 @@
 
 - (void)onConnectionClosedWithWSReason:(NSString*)WSreason
 {
-
+    NSLog(@"Swipe & Color, onConnectionClosed");
 }
 
 - (void)onConnectionError:(NSError*)error
