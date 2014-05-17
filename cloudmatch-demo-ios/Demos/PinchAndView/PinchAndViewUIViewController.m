@@ -104,7 +104,7 @@
     if (mImgObj != nil) {
         // the frame here below should adapt to the device that this app is running on
         imageView = [[UIImageView alloc]initWithFrame:CGRectMake(mIVTopX, mIVTopY, mIVWidth, mIVHeigth)];
-        [imageView setContentMode:UIViewContentModeScaleToFill];
+        [imageView setContentMode:UIViewContentModeScaleAspectFit];
         [imageView setImage:mImgObj];
         [self.view insertSubview:imageView atIndex:0];
         
