@@ -10,7 +10,10 @@
 
 @protocol SwipeAndColorMatchedProtocol <NSObject>
 
+@required
+
 - (void)onMatchedInGroup:(NSString*)groupId Size:(NSInteger)size MyId:(NSInteger)myId;
+- (void)onMatheeLeft;
 - (void)onDelivery:(NSString*)payload;
 
 @end

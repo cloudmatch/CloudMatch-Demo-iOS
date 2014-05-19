@@ -42,7 +42,10 @@ static NSString* const ROTATION_MESSAGE = @"rotation";
     
     serverEventDelegate = [[SwipeAndColorServerEventDelegate alloc] init];
     [serverEventDelegate setOnMatchedDelegate:self];
-    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
     // TODO: if you want to build this, request a free pair of apiKey / appId on cloudmatch.io!
     NSString* myApiKey = @"DUMMY-API-KEY";
     NSString* myAppId = @"DUMMY-APP-ID";
@@ -50,6 +53,11 @@ static NSString* const ROTATION_MESSAGE = @"rotation";
     [[CMCloudMatchClient sharedInstance] attachToView:drawingView withMovementDelegate:drawingView criteria:kCMCriteriaSwipe];
     [[CMCloudMatchClient sharedInstance] setServerEventDelegate:serverEventDelegate apiKey:myApiKey appId:myAppId];
     [[CMCloudMatchClient sharedInstance] connect];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [[CMCloudMatchClient sharedInstance] closeConnection];
 }
 
 - (void)didReceiveMemoryWarning
@@ -70,12 +78,15 @@ static NSString* const ROTATION_MESSAGE = @"rotation";
     [[CMCloudMatchClient sharedInstance] deliverPayload:jsonString toGroup:mGroupId];
 }
 
+# pragma mark - OnMatchedProtocol
+
 - (void)onMatchedInGroup:(NSString*)groupId Size:(NSInteger)size MyId:(NSInteger)myId{
     NSLog(@"matched callback!");
     // choose the right color table
     mColorTable = [ColorTables getColorTableOfSize:size];
     mCurrentColorIndex = myId;
     mGroupId = groupId;
+    mGroupSize = size;
     
     [self setNewColor];
     [drawingView clearScreen];
@@ -84,6 +95,18 @@ static NSString* const ROTATION_MESSAGE = @"rotation";
         mChangeColorButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
         [mChangeColorButton addTarget:self action:@selector(onChangeColorTap:) forControlEvents:UIControlEventTouchDown];
         [self.view addSubview:mChangeColorButton];
+    }
+}
+
+-(void)onMatheeLeft
+{
+    // if nobody is in the group anymore, let's quit it.
+    mGroupSize = mGroupSize - 1;
+    if (mGroupSize <= 1) {
+        self.view.backgroundColor = [UIColor whiteColor];
+        [mChangeColorButton removeFromSuperview];
+        mChangeColorButton = nil;
+        NSLog(@"everybody left");
     }
 }
 

@@ -60,7 +60,8 @@
 
 - (void)onMatcheeLeftMessage:(CMMatcheeLeftMessage*)message
 {
-
+    NSLog(@"matchee left");
+    [mMatchedDelegate onMatheeLeft];
 }
 
 - (void)onMatcheeDelivery:(CMMatcheeDelivery*)delivery

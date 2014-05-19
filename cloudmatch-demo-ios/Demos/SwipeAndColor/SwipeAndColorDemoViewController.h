@@ -15,6 +15,7 @@
 @interface SwipeAndColorDemoViewController : UIViewController <SwipeAndColorMatchedProtocol>
 {
     NSString* mGroupId;
+    NSInteger mGroupSize;
     NSArray* mColorTable;
     NSInteger mCurrentColorIndex;
     UIButton *mChangeColorButton;
