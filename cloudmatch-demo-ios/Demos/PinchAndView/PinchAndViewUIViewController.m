@@ -127,7 +127,7 @@
 
 -(void)onMovementDetection:(Movement)movement swipeType:(SwipeType)swipeType pointStart:(CGPoint)pointStart pointEnd:(CGPoint)pointEnd
 {
-    NSLog(@"onMovementDetection: (%f, %f) to (%f, %f)", pointStart.x, pointStart.y, pointEnd.x, pointEnd.y);
+    NSLog(@"onMovementDetection: (%f, %f) to (%f, %f), swipeType %d", pointStart.x, pointStart.y, pointEnd.x, pointEnd.y, swipeType);
     
     mPointEndX = pointEnd.x;
     mPointEndY = pointEnd.y;
@@ -138,23 +138,24 @@
         [self.mMyRectView removeFromSuperview];
         [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(removeTinyRect:) object:nil];
         
-        NSInteger size = 20;
-        CGFloat rectX = pointEnd.x;
-        switch (movement) {
-            case kMovementInnerRight:
-                rectX = rectX - size;
-                break;
-            default:
-                break;
+        if (swipeType == kSwipeOutgoing) {
+            NSInteger size = 15;
+            CGFloat rectX = pointEnd.x;
+            switch (movement) {
+                case kMovementInnerRight:
+                    rectX = rectX - size;
+                    break;
+                default:
+                    break;
+            }
+        
+            CGRect rect = CGRectMake(rectX, pointEnd.y, size, size);
+            self.mMyRectView = [[MyRectView alloc] initWithFrame:rect];
+            [self.view addSubview:self.mMyRectView];
+            
+            // remove it after a bit
+            [self performSelector:@selector(removeTinyRect:) withObject:nil afterDelay:3.0];
         }
-        
-
-        CGRect rect = CGRectMake(rectX, pointEnd.y, size, size);
-        self.mMyRectView = [[MyRectView alloc] initWithFrame:rect];
-        [self.view addSubview:self.mMyRectView];
-        
-        // remove it after a bit
-        [self performSelector:@selector(removeTinyRect:) withObject:nil afterDelay:3.0];
     }
     
     // this block takes care of the screen position calculations

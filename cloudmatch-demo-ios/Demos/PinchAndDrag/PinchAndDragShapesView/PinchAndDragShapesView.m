@@ -218,28 +218,31 @@ static double const DRAGGING_CANCEL_INTERVAL = 3.0; // seconds
 
 -(void)onMovementDetection:(Movement)movement swipeType:(SwipeType)swipeType pointStart:(CGPoint)pointStart pointEnd:(CGPoint)pointEnd
 {
+    NSLog(@"onMovementDetection: (%f, %f) to (%f, %f)", pointStart.x, pointStart.y, pointEnd.x, pointEnd.y);
+    
     // cancel previous stuff
     [self.mTinyCircleView removeFromSuperview];
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(removeTinyCircle:) object:nil];
     
-    NSInteger size = 20;
-    CGFloat circleX = pointEnd.x;
-    switch (movement) {
-        case kMovementInnerRight:
-            circleX = circleX - size;
-            break;
-            
-        default:
-            break;
+    if (swipeType == kSwipeOutgoing) {
+        NSInteger size = 20;
+        CGFloat circleX = pointEnd.x;
+        switch (movement) {
+            case kMovementInnerRight:
+                circleX = circleX - size;
+                break;
+                
+            default:
+                break;
+        }
+        
+        CGRect rect = CGRectMake(circleX, pointEnd.y, size, size);
+        self.mTinyCircleView = [[TinyCircleView alloc] initWithFrame:rect];
+        [self addSubview:self.mTinyCircleView];
+        
+        // remove it after a bit
+        [self performSelector:@selector(removeTinyCircle:) withObject:nil afterDelay:SHAPE_VISIBILITY_RESET_INTERVAL];
     }
-    
-    NSLog(@"onMovementDetection: (%f, %f) to (%f, %f)", pointStart.x, pointStart.y, pointEnd.x, pointEnd.y);
-    CGRect rect = CGRectMake(circleX, pointEnd.y, size, size);
-    self.mTinyCircleView = [[TinyCircleView alloc] initWithFrame:rect];
-    [self addSubview:self.mTinyCircleView];
-    
-    // remove it after a bit
-    [self performSelector:@selector(removeTinyCircle:) withObject:nil afterDelay:SHAPE_VISIBILITY_RESET_INTERVAL];
 }
 
 - (BOOL)isSwipeValid
