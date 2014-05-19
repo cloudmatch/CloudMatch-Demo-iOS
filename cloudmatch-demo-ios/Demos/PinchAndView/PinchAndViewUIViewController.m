@@ -46,18 +46,25 @@
     
     NSLog(@"PinchAndView Demo starting");
     
+    mViewDimensions = self.view.bounds.size;
+    mHalfScreenX = mViewDimensions.width / 2;
+    mHalfScreenY = mViewDimensions.height / 2;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
     // TODO: if you want to build this, request a free pair of apiKey / appId on cloudmatch.io!
     NSString* myApiKey = @"DUMMY-API-KEY";
     NSString* myAppId = @"DUMMY-APP-ID";
     
-    mViewDimensions = self.view.bounds.size;
-    mHalfScreenX = mViewDimensions.width / 2;
-    mHalfScreenY = mViewDimensions.height / 2;
-    
     [[CMCloudMatchClient sharedInstance] attachToView:self.view withMovementDelegate:self criteria:kCMCriteriaPinch];
     [[CMCloudMatchClient sharedInstance] setServerEventDelegate:self apiKey:myApiKey appId:myAppId];
     [[CMCloudMatchClient sharedInstance] connect];
-    
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [[CMCloudMatchClient sharedInstance] closeConnection];
 }
 
 - (void)didReceiveMemoryWarning

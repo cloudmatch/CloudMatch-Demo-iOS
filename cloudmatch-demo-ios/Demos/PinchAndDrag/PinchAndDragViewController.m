@@ -32,7 +32,10 @@
     mServerEventDelegate = [[PinchAndDragServerEventDelegate alloc] init];
     [mServerEventDelegate setMatchedDelegate:mShapesView];
     [mServerEventDelegate setDeliveryDelegate:mShapesView];
-    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
     // TODO: if you want to build this, request a free pair of apiKey / appId on cloudmatch.io!
     NSString* myApiKey = @"DUMMY-API-KEY";
     NSString* myAppId = @"DUMMY-APP-ID";
@@ -40,6 +43,11 @@
     [[CMCloudMatchClient sharedInstance] attachToView:mShapesView withMovementDelegate:mShapesView criteria:kCMCriteriaPinch];
     [[CMCloudMatchClient sharedInstance] setServerEventDelegate:mServerEventDelegate apiKey:myApiKey appId:myAppId];
     [[CMCloudMatchClient sharedInstance] connect];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [[CMCloudMatchClient sharedInstance] closeConnection];
 }
 
 - (void)didReceiveMemoryWarning
