@@ -47,7 +47,7 @@
 		3E81BDB818CF75FE00CC3D89 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E81BDB718CF75FE00CC3D89 /* libicucore.dylib */; };
 		3E81BDBA18CF760400CC3D89 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E81BDB918CF760400CC3D89 /* Security.framework */; };
 		3E81BDBC18CF760900CC3D89 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E81BDBB18CF760900CC3D89 /* CoreLocation.framework */; };
-		3EBE8EBC18E02F970038823A /* SwipeAndColorDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE8EBB18E02F970038823A /* SwipeAndColorDemoViewController.m */; };
+		3EBE8EBC18E02F970038823A /* SwipeAndColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE8EBB18E02F970038823A /* SwipeAndColorViewController.m */; };
 		3EBE8EC318E0311C0038823A /* SwipeAndColorServerEventDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE8EC218E0311C0038823A /* SwipeAndColorServerEventDelegate.m */; };
 		3ED8EB9F18F12E26005B40FC /* TinyCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8EB9E18F12E26005B40FC /* TinyCircleView.m */; };
 		3ED8EBA418F13EE2005B40FC /* MyRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8EBA318F13EE2005B40FC /* MyRectView.m */; };
@@ -65,44 +65,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3E02DFB41917D8D8008DEA48 /* CMDAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDAboutViewController.h; sourceTree = "<group>"; };
-		3E02DFB51917D8D8008DEA48 /* CMDAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDAboutViewController.m; sourceTree = "<group>"; };
-		3E02DFB71917E5D4008DEA48 /* ColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUtil.h; sourceTree = "<group>"; };
-		3E02DFB81917E5D4008DEA48 /* ColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUtil.m; sourceTree = "<group>"; };
+		3E02DFB41917D8D8008DEA48 /* CMDAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CMDAboutViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3E02DFB51917D8D8008DEA48 /* CMDAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CMDAboutViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3E02DFB71917E5D4008DEA48 /* ColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ColorUtil.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3E02DFB81917E5D4008DEA48 /* ColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ColorUtil.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3E19B5E218E034D800CA6947 /* SwipeAndSendDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeAndSendDrawingView.h; sourceTree = "<group>"; };
 		3E19B5E318E034D800CA6947 /* SwipeAndSendDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeAndSendDrawingView.m; sourceTree = "<group>"; };
 		3E19B5E618E034EF00CA6947 /* SwipeAndColorDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeAndColorDrawingView.h; sourceTree = "<group>"; };
 		3E19B5E718E034EF00CA6947 /* SwipeAndColorDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeAndColorDrawingView.m; sourceTree = "<group>"; };
-		3E19B5EA18E03B2800CA6947 /* ColorTables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorTables.h; sourceTree = "<group>"; };
-		3E19B5EB18E03B2800CA6947 /* ColorTables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorTables.m; sourceTree = "<group>"; };
+		3E19B5EA18E03B2800CA6947 /* ColorTables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ColorTables.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3E19B5EB18E03B2800CA6947 /* ColorTables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ColorTables.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3E19EACB1927AA31009534C6 /* Eerste.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Eerste.gpx; sourceTree = "<group>"; };
 		3E19EAD01927B1C2009534C6 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		3E19EAD2192A212A009534C6 /* Alab.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Alab.gpx; sourceTree = "<group>"; };
-		3E2BF2D319178EC300FBA6F2 /* PinchAndViewDeliveryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchAndViewDeliveryHelper.h; sourceTree = "<group>"; };
-		3E2BF2D419178EC300FBA6F2 /* PinchAndViewDeliveryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinchAndViewDeliveryHelper.m; sourceTree = "<group>"; };
+		3E2BF2D319178EC300FBA6F2 /* PinchAndViewDeliveryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PinchAndViewDeliveryHelper.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3E2BF2D419178EC300FBA6F2 /* PinchAndViewDeliveryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PinchAndViewDeliveryHelper.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3E2E136518DF300400633A71 /* split_image_2_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = split_image_2_1.png; sourceTree = "<group>"; };
 		3E2E136618DF300400633A71 /* split_image_2_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = split_image_2_2.png; sourceTree = "<group>"; };
-		3E36730018E170580061ADFA /* PinchAndDragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchAndDragViewController.h; sourceTree = "<group>"; };
-		3E36730118E170580061ADFA /* PinchAndDragViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinchAndDragViewController.m; sourceTree = "<group>"; };
-		3E36730318E1706F0061ADFA /* PinchAndDragShapesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchAndDragShapesView.h; sourceTree = "<group>"; };
-		3E36730418E1706F0061ADFA /* PinchAndDragShapesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinchAndDragShapesView.m; sourceTree = "<group>"; };
-		3E36730A18E175AC0061ADFA /* PinchAndDragServerEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchAndDragServerEventDelegate.h; sourceTree = "<group>"; };
-		3E36730B18E175AC0061ADFA /* PinchAndDragServerEventDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinchAndDragServerEventDelegate.m; sourceTree = "<group>"; };
-		3E36730D18E175D20061ADFA /* PinchAndDragDeliveryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchAndDragDeliveryHelper.h; sourceTree = "<group>"; };
-		3E36730E18E175D20061ADFA /* PinchAndDragDeliveryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinchAndDragDeliveryHelper.m; sourceTree = "<group>"; };
-		3E36731318E17AEC0061ADFA /* PinchAndDragConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchAndDragConsts.h; sourceTree = "<group>"; };
-		3E36731418E17AEC0061ADFA /* PinchAndDragConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinchAndDragConsts.m; sourceTree = "<group>"; };
-		3E36731718E185190061ADFA /* PinchAndDragDeliveryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchAndDragDeliveryProtocol.h; sourceTree = "<group>"; };
-		3E36731818E1852F0061ADFA /* PinchAndDragMatchedProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinchAndDragMatchedProtocol.h; sourceTree = "<group>"; };
-		3E36731918E197210061ADFA /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
-		3E36731A18E197210061ADFA /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
-		3E3E50AE1912863100F7F5B1 /* SwipeAndColorMatchedProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeAndColorMatchedProtocol.h; sourceTree = "<group>"; };
-		3E6A9DE218D4A86300E3290A /* SwipeAndSendUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeAndSendUIViewController.h; sourceTree = "<group>"; };
-		3E6A9DE318D4A86300E3290A /* SwipeAndSendUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeAndSendUIViewController.m; sourceTree = "<group>"; };
-		3E6A9DE618D4A87A00E3290A /* PinchAndViewUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchAndViewUIViewController.h; sourceTree = "<group>"; };
-		3E6A9DE718D4A87A00E3290A /* PinchAndViewUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinchAndViewUIViewController.m; sourceTree = "<group>"; };
-		3E6EFF6D18E1FBE4003ABD68 /* SquareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareView.h; sourceTree = "<group>"; };
-		3E6EFF6E18E1FBE4003ABD68 /* SquareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareView.m; sourceTree = "<group>"; };
+		3E36730018E170580061ADFA /* PinchAndDragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PinchAndDragViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3E36730118E170580061ADFA /* PinchAndDragViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PinchAndDragViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3E36730318E1706F0061ADFA /* PinchAndDragShapesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PinchAndDragShapesView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3E36730418E1706F0061ADFA /* PinchAndDragShapesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PinchAndDragShapesView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3E36730A18E175AC0061ADFA /* PinchAndDragServerEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PinchAndDragServerEventDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3E36730B18E175AC0061ADFA /* PinchAndDragServerEventDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PinchAndDragServerEventDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3E36730D18E175D20061ADFA /* PinchAndDragDeliveryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PinchAndDragDeliveryHelper.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3E36730E18E175D20061ADFA /* PinchAndDragDeliveryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PinchAndDragDeliveryHelper.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3E36731318E17AEC0061ADFA /* PinchAndDragConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PinchAndDragConsts.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3E36731418E17AEC0061ADFA /* PinchAndDragConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PinchAndDragConsts.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3E36731718E185190061ADFA /* PinchAndDragDeliveryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PinchAndDragDeliveryProtocol.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3E36731818E1852F0061ADFA /* PinchAndDragMatchedProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PinchAndDragMatchedProtocol.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3E36731918E197210061ADFA /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CircleView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3E36731A18E197210061ADFA /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CircleView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3E3E50AE1912863100F7F5B1 /* SwipeAndColorMatchedProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SwipeAndColorMatchedProtocol.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3E6A9DE218D4A86300E3290A /* SwipeAndSendUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SwipeAndSendUIViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3E6A9DE318D4A86300E3290A /* SwipeAndSendUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SwipeAndSendUIViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3E6A9DE618D4A87A00E3290A /* PinchAndViewUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PinchAndViewUIViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3E6A9DE718D4A87A00E3290A /* PinchAndViewUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PinchAndViewUIViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3E6EFF6D18E1FBE4003ABD68 /* SquareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SquareView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3E6EFF6E18E1FBE4003ABD68 /* SquareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SquareView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3E709B8319275C2D0022A4D4 /* CoffeeRoom.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CoffeeRoom.gpx; sourceTree = "<group>"; };
 		3E81BD7818CF75D000CC3D89 /* CloudMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E81BD7B18CF75D000CC3D89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -110,32 +110,32 @@
 		3E81BD7F18CF75D000CC3D89 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3E81BD8318CF75D000CC3D89 /* CloudMatch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CloudMatch-Info.plist"; sourceTree = "<group>"; };
 		3E81BD8518CF75D000CC3D89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3E81BD8718CF75D000CC3D89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3E81BD8718CF75D000CC3D89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3E81BD8918CF75D000CC3D89 /* CloudMatch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudMatch-Prefix.pch"; sourceTree = "<group>"; };
-		3E81BD8A18CF75D000CC3D89 /* CMDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMDAppDelegate.h; sourceTree = "<group>"; };
-		3E81BD8B18CF75D000CC3D89 /* CMDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMDAppDelegate.m; sourceTree = "<group>"; };
+		3E81BD8A18CF75D000CC3D89 /* CMDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CMDAppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3E81BD8B18CF75D000CC3D89 /* CMDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CMDAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3E81BD8E18CF75D000CC3D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		3E81BD9118CF75D000CC3D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		3E81BD9318CF75D000CC3D89 /* CMDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMDViewController.h; sourceTree = "<group>"; };
-		3E81BD9418CF75D000CC3D89 /* CMDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMDViewController.m; sourceTree = "<group>"; };
+		3E81BD9318CF75D000CC3D89 /* CMDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CMDViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3E81BD9418CF75D000CC3D89 /* CMDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CMDViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3E81BD9618CF75D000CC3D89 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3E81BD9C18CF75D000CC3D89 /* CloudMatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudMatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E81BD9D18CF75D000CC3D89 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3E81BDA518CF75D000CC3D89 /* CloudMatch DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CloudMatch DemoTests-Info.plist"; sourceTree = "<group>"; };
 		3E81BDA718CF75D000CC3D89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3E81BDA918CF75D000CC3D89 /* gesturematch_demo_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gesturematch_demo_iosTests.m; sourceTree = "<group>"; };
+		3E81BDA918CF75D000CC3D89 /* gesturematch_demo_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = gesturematch_demo_iosTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3E81BDB518CF75F600CC3D89 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		3E81BDB718CF75FE00CC3D89 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		3E81BDB918CF760400CC3D89 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		3E81BDBB18CF760900CC3D89 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		3EBE8EBA18E02F970038823A /* SwipeAndColorDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeAndColorDemoViewController.h; sourceTree = "<group>"; };
-		3EBE8EBB18E02F970038823A /* SwipeAndColorDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeAndColorDemoViewController.m; sourceTree = "<group>"; };
-		3EBE8EC118E0311C0038823A /* SwipeAndColorServerEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeAndColorServerEventDelegate.h; sourceTree = "<group>"; };
-		3EBE8EC218E0311C0038823A /* SwipeAndColorServerEventDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeAndColorServerEventDelegate.m; sourceTree = "<group>"; };
-		3ED8EB9D18F12E26005B40FC /* TinyCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyCircleView.h; sourceTree = "<group>"; };
-		3ED8EB9E18F12E26005B40FC /* TinyCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TinyCircleView.m; sourceTree = "<group>"; };
-		3ED8EBA218F13EE2005B40FC /* MyRectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRectView.h; sourceTree = "<group>"; };
-		3ED8EBA318F13EE2005B40FC /* MyRectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRectView.m; sourceTree = "<group>"; };
+		3EBE8EBA18E02F970038823A /* SwipeAndColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeAndColorViewController.h; sourceTree = "<group>"; };
+		3EBE8EBB18E02F970038823A /* SwipeAndColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SwipeAndColorViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3EBE8EC118E0311C0038823A /* SwipeAndColorServerEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SwipeAndColorServerEventDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3EBE8EC218E0311C0038823A /* SwipeAndColorServerEventDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SwipeAndColorServerEventDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3ED8EB9D18F12E26005B40FC /* TinyCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TinyCircleView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3ED8EB9E18F12E26005B40FC /* TinyCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TinyCircleView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3ED8EBA218F13EE2005B40FC /* MyRectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MyRectView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3ED8EBA318F13EE2005B40FC /* MyRectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MyRectView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3EDA1D3919274D610008B285 /* CloudMatchSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CloudMatchSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,6 +200,9 @@
 		3E19EACF1927B1C2009534C6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3E19EAD2192A212A009534C6 /* Alab.gpx */,
+				3E19EACB1927AA31009534C6 /* Eerste.gpx */,
+				3E709B8319275C2D0022A4D4 /* CoffeeRoom.gpx */,
 				3E19EAD01927B1C2009534C6 /* Roboto-Regular.ttf */,
 			);
 			name = Resources;
@@ -301,10 +304,7 @@
 		3E81BD6F18CF75D000CC3D89 = {
 			isa = PBXGroup;
 			children = (
-				3E19EAD2192A212A009534C6 /* Alab.gpx */,
 				3E19EACF1927B1C2009534C6 /* Resources */,
-				3E19EACB1927AA31009534C6 /* Eerste.gpx */,
-				3E709B8319275C2D0022A4D4 /* CoffeeRoom.gpx */,
 				3E81BD8118CF75D000CC3D89 /* cloudmatch-demo-ios */,
 				3E81BDA318CF75D000CC3D89 /* cloudmatch-demo-iosTests */,
 				3E81BD7A18CF75D000CC3D89 /* Frameworks */,
@@ -399,8 +399,8 @@
 			children = (
 				3E3E50AD1912863100F7F5B1 /* SwipeAndColorMatchedProtocol */,
 				3E19B5E518E034EF00CA6947 /* SwipeAndColorDrawingView */,
-				3EBE8EBA18E02F970038823A /* SwipeAndColorDemoViewController.h */,
-				3EBE8EBB18E02F970038823A /* SwipeAndColorDemoViewController.m */,
+				3EBE8EBA18E02F970038823A /* SwipeAndColorViewController.h */,
+				3EBE8EBB18E02F970038823A /* SwipeAndColorViewController.m */,
 				3EBE8EC118E0311C0038823A /* SwipeAndColorServerEventDelegate.h */,
 				3EBE8EC218E0311C0038823A /* SwipeAndColorServerEventDelegate.m */,
 			);
@@ -525,7 +525,7 @@
 				3E6A9DE818D4A87A00E3290A /* PinchAndViewUIViewController.m in Sources */,
 				3E36731518E17AEC0061ADFA /* PinchAndDragConsts.m in Sources */,
 				3E6A9DE418D4A86300E3290A /* SwipeAndSendUIViewController.m in Sources */,
-				3EBE8EBC18E02F970038823A /* SwipeAndColorDemoViewController.m in Sources */,
+				3EBE8EBC18E02F970038823A /* SwipeAndColorViewController.m in Sources */,
 				3E36730218E170580061ADFA /* PinchAndDragViewController.m in Sources */,
 				3E02DFB91917E5D4008DEA48 /* ColorUtil.m in Sources */,
 				3EBE8EC318E0311C0038823A /* SwipeAndColorServerEventDelegate.m in Sources */,

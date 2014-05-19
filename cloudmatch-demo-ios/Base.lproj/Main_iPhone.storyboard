@@ -218,10 +218,10 @@
             </objects>
             <point key="canvasLocation" x="982" y="23"/>
         </scene>
-        <!--Swipe And Color Demo View Controller-->
+        <!--Swipe And Color View Controller-->
         <scene sceneID="YUs-OU-Ibv">
             <objects>
-                <viewController id="NNe-Dm-LfV" customClass="SwipeAndColorDemoViewController" sceneMemberID="viewController">
+                <viewController id="NNe-Dm-LfV" customClass="SwipeAndColorViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mkh-TC-pCB"/>
                         <viewControllerLayoutGuide type="bottom" id="IvG-Bl-WNt"/>

@@ -1,6 +1,6 @@
 //
 //  ColorUtil.h
-//  CloudMatch Demo
+//  CloudMatch
 //
 //  Created by Fabio Tiriticco on 5/05/2014.
 //  Copyright (c) 2014 CloudMatch. All rights reserved.

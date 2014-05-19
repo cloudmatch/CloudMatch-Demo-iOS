@@ -1,6 +1,6 @@
 //
 //  SwipeAndColorDemoViewController.h
-//  CloudMatch Demo
+//  CloudMatch
 //
 //  Created by Fabio Tiriticco on 24/03/2014.
 //  Copyright (c) 2014 cloudmatch.io All rights reserved.
@@ -12,7 +12,7 @@
 
 @class SwipeAndColorServerEventDelegate;
 
-@interface SwipeAndColorDemoViewController : UIViewController <SwipeAndColorMatchedProtocol>
+@interface SwipeAndColorViewController : UIViewController <SwipeAndColorMatchedProtocol>
 {
     NSString* mGroupId;
     NSInteger mGroupSize;

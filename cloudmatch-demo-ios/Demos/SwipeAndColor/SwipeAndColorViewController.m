@@ -1,22 +1,22 @@
 //
 //  SwipeAndColorDemoViewController.m
-//  CloudMatch Demo
+//  CloudMatch
 //
 //  Created by Fabio Tiriticco on 24/03/2014.
 //  Copyright (c) 2014 cloudmatch.io All rights reserved.
 //
 
-#import "SwipeAndColorDemoViewController.h"
+#import "SwipeAndColorViewController.h"
 #import "SwipeAndColorServerEventDelegate.h"
 #import "ColorTables.h"
 
 static NSString* const ROTATION_MESSAGE = @"rotation";
 
-@interface SwipeAndColorDemoViewController ()
+@interface SwipeAndColorViewController ()
 
 @end
 
-@implementation SwipeAndColorDemoViewController
+@implementation SwipeAndColorViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
