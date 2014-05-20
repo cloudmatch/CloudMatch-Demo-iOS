@@ -17,4 +17,5 @@
 }
 @property (weak, nonatomic) IBOutlet UITextField *textToSend;
 @property (weak, nonatomic) IBOutlet UILabel *receivedText;
+@property (weak, nonatomic) IBOutlet UIButton *sendTextButton;
 @end

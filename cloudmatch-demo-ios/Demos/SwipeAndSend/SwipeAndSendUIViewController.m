@@ -32,7 +32,8 @@
     // the frame here below should adapt to the device that this app is running on
     drawingView = [[SwipeAndSendDrawingView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
     [self.view addSubview:drawingView];
-    [self.view sendSubviewToBack:drawingView];
+    [self.view bringSubviewToFront:_textToSend];
+    [self.view bringSubviewToFront:_sendTextButton];
 
     mGroupId = @"";
 }

@@ -36,7 +36,6 @@ static NSString* const ROTATION_MESSAGE = @"rotation";
     // the frame here below should adapt to the device that this app is running on
     drawingView = [[SwipeAndColorDrawingView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
     [self.view addSubview:drawingView];
-    [self.view sendSubviewToBack:drawingView];
     
     mGroupId = @"";
     
@@ -87,6 +86,7 @@ static NSString* const ROTATION_MESSAGE = @"rotation";
     mCurrentColorIndex = myId;
     mGroupId = groupId;
     mGroupSize = size;
+    _mPinchIcon.hidden = YES;
     
     [self setNewColor];
     [drawingView clearScreen];
@@ -107,6 +107,7 @@ static NSString* const ROTATION_MESSAGE = @"rotation";
         [mChangeColorButton removeFromSuperview];
         mChangeColorButton = nil;
         NSLog(@"everybody left");
+        _mPinchIcon.hidden = NO;
     }
 }
 

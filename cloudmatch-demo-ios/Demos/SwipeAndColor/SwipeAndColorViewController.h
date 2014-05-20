@@ -24,5 +24,6 @@
 }
 
 -(void)onMatchedInGroup:(NSString*)groupId Size:(NSInteger)size MyId:(NSInteger)myId;
+@property (weak, nonatomic) IBOutlet UIImageView *mPinchIcon;
 
 @end

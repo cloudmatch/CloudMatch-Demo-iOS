@@ -28,7 +28,7 @@
                         <viewControllerLayoutGuide type="bottom" id="NMD-vl-PJT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6I-s9-621">
@@ -120,7 +120,7 @@
                         <viewControllerLayoutGuide type="bottom" id="tuY-qe-YVT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dFO-oa-uhA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swipe And Send" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDZ-Wf-dOP">
@@ -171,12 +171,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Swipe icon" translatesAutoresizingMaskIntoConstraints="NO" id="oyl-Gv-B7A">
+                                <rect key="frame" x="62" y="256" width="196" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="iWj-Bx-h5p"/>
                     <connections>
                         <outlet property="receivedText" destination="n77-l8-ska" id="TAM-PO-WVa"/>
+                        <outlet property="sendTextButton" destination="RbU-aV-dtQ" id="5c0-mi-iid"/>
                         <outlet property="textToSend" destination="vm7-2f-7x5" id="hhp-GK-JS5"/>
                     </connections>
                 </viewController>
@@ -193,7 +198,7 @@
                         <viewControllerLayoutGuide type="bottom" id="XEZ-qq-LK7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Fgt-a8-T38">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pinch &amp; View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8CA-8j-9b3">
@@ -208,11 +213,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pinch icon" translatesAutoresizingMaskIntoConstraints="NO" id="FxA-MW-BUW">
+                                <rect key="frame" x="58" y="168" width="204" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="SJ8-tn-Bug"/>
+                    <connections>
+                        <outlet property="mPinchIcon" destination="FxA-MW-BUW" id="4hb-Fd-l0M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zqf-j1-dAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -227,7 +239,7 @@
                         <viewControllerLayoutGuide type="bottom" id="IvG-Bl-WNt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oI9-8l-hVi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swipe &amp; Color" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWQ-ac-cE4">
@@ -242,10 +254,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Swipe icon" translatesAutoresizingMaskIntoConstraints="NO" id="Bur-w2-cAG">
+                                <rect key="frame" x="53" y="228" width="202" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="mha-HS-VxD"/>
+                    <connections>
+                        <outlet property="mPinchIcon" destination="Bur-w2-cAG" id="La3-bf-MAD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NaP-p4-O9Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -260,7 +279,7 @@
                         <viewControllerLayoutGuide type="bottom" id="mLD-55-0H4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cEw-wR-1Uu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pinch &amp; Drag" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2X-Zi-OPV">
@@ -275,10 +294,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pinch icon" translatesAutoresizingMaskIntoConstraints="NO" id="1O3-uv-ohJ">
+                                <rect key="frame" x="58" y="235" width="204" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="q56-Zy-eBT"/>
+                    <connections>
+                        <outlet property="mPinchView" destination="1O3-uv-ohJ" id="pDi-ML-dW8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uyO-4k-tau" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -293,11 +319,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Ai1-lf-jsn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CJG-Jf-yLh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_with_border" translatesAutoresizingMaskIntoConstraints="NO" id="u5p-G0-Nn5">
-                                <rect key="frame" x="68" y="63" width="185" height="135"/>
+                                <rect key="frame" x="68" y="63" width="185" height="47"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="CloudMatch" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ibZ-UK-6Cq">
@@ -333,11 +359,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Pinch icon" width="958" height="946"/>
+        <image name="Swipe icon" width="958" height="950"/>
         <image name="logo_with_border" width="512" height="345"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

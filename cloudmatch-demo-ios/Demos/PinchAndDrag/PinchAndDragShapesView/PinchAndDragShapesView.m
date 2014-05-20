@@ -48,6 +48,11 @@ static double const DRAGGING_CANCEL_INTERVAL = 3.0; // seconds
     return self;
 }
 
+-(void)setMatchedDelegate:(id<PinchAndDragMatchedProtocol>)matchedDelegate
+{
+    mMatchedDelegate = matchedDelegate;
+}
+
 #pragma mark - delivery protocol
 
 -(void)onCointoss:(double)cointoss
@@ -102,6 +107,7 @@ static double const DRAGGING_CANCEL_INTERVAL = 3.0; // seconds
     self.mGroupId = [[NSString alloc] initWithString:groupId];
     mMyCointossValue = drand48();
     [mDeliveryHelper sendCointoss:mMyCointossValue ToGroup:self.mGroupId];
+    [mMatchedDelegate onMatchedInGroup:groupId];
 }
 
 #pragma mark - touch delegate methods

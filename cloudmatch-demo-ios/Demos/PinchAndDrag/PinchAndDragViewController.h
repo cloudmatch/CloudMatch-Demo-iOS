@@ -10,9 +10,10 @@
 #import "PinchAndDragShapesView.h"
 @class PinchAndDragServerEventDelegate;
 
-@interface PinchAndDragViewController : UIViewController
+@interface PinchAndDragViewController : UIViewController <PinchAndDragMatchedProtocol>
 {
     PinchAndDragServerEventDelegate* mServerEventDelegate;
     PinchAndDragShapesView* mShapesView;
 }
+@property (weak, nonatomic) IBOutlet UIImageView *mPinchView;
 @end

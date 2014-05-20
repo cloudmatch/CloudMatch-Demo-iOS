@@ -15,9 +15,6 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-
-    }
     return self;
 }
 
@@ -27,6 +24,7 @@
     // Do any additional setup after loading the view.
     
     mShapesView = [[PinchAndDragShapesView alloc] initWithFrame:self.view.frame];
+    [mShapesView setMatchedDelegate:self];
     [self.view addSubview:mShapesView];
     
     mServerEventDelegate = [[PinchAndDragServerEventDelegate alloc] init];
@@ -66,5 +64,13 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - on matched methods
+
+-(void)onMatchedInGroup:(NSString *)groupId
+{
+    NSLog(@"matched");
+    _mPinchView.hidden = YES;
+}
 
 @end

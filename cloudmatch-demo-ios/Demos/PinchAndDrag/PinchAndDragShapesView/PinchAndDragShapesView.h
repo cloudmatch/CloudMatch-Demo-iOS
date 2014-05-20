@@ -21,6 +21,7 @@
     PinchAndDragDeliveryHelper* mDeliveryHelper;
     CGPoint mCircleInitialPosition;
     CGPoint mSquareInitialPosition;
+    id<PinchAndDragMatchedProtocol> mMatchedDelegate;
 }
 
 @property (nonatomic, strong) NSString *mGroupId;
@@ -30,5 +31,7 @@
 @property (nonatomic, strong) UIView *mMovingView;
 @property (nonatomic, strong) NSString *mMovingShape;
 @property (nonatomic, strong) NSString *mShapeBeingDraggedOnOtherSide;
+
+-(void)setMatchedDelegate:(id<PinchAndDragMatchedProtocol>)matchedDelegate;
 
 @end

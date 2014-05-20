@@ -13,5 +13,6 @@
 @interface PinchAndViewUIViewController : UIViewController <CMOnMovementDelegate, CMOnServerEventDelegate>
 
 @property (nonatomic, strong) MyRectView* mMyRectView;
+@property (weak, nonatomic) IBOutlet UIImageView *mPinchIcon;
 
 @end

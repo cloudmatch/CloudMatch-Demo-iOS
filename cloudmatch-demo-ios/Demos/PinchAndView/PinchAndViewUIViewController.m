@@ -87,6 +87,7 @@
         [button1 removeFromSuperview];
         button1 = nil;
     }
+    self.mPinchIcon.hidden = NO;
 }
 
 /*
@@ -114,6 +115,7 @@
         [imageView setContentMode:UIViewContentModeScaleAspectFit];
         [imageView setImage:mImgObj];
         [self.view insertSubview:imageView atIndex:0];
+        self.mPinchIcon.hidden = YES;
         
         if (button1 == nil) {
             button1 = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, mViewDimensions.width, mViewDimensions.height)];
@@ -127,7 +129,7 @@
 
 -(void)onMovementDetection:(Movement)movement swipeType:(SwipeType)swipeType pointStart:(CGPoint)pointStart pointEnd:(CGPoint)pointEnd
 {
-    NSLog(@"onMovementDetection: (%f, %f) to (%f, %f), swipeType %d", pointStart.x, pointStart.y, pointEnd.x, pointEnd.y, swipeType);
+    NSLog(@"onMovementDetection: (%f, %f) to (%f, %f), swipeType %ld", pointStart.x, pointStart.y, pointEnd.x, pointEnd.y, (long) swipeType);
     
     mPointEndX = pointEnd.x;
     mPointEndY = pointEnd.y;
