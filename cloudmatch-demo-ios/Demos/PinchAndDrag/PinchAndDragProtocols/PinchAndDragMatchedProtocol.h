@@ -11,5 +11,6 @@
 @protocol PinchAndDragMatchedProtocol <NSObject>
 
 -(void)onMatchedInGroup:(NSString*)groupId;
+-(void)onMatcheeLeft;
 
 @end

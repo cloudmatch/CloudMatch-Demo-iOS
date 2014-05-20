@@ -69,8 +69,12 @@
 
 -(void)onMatchedInGroup:(NSString *)groupId
 {
-    NSLog(@"matched");
     _mPinchView.hidden = YES;
+}
+
+-(void)onMatcheeLeft
+{
+    _mPinchView.hidden = NO;
 }
 
 @end

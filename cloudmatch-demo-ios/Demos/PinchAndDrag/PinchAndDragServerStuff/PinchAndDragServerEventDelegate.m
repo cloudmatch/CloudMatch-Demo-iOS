@@ -66,7 +66,7 @@
 
 - (void)onMatcheeLeftMessage:(CMMatcheeLeftMessage*)message
 {
-
+    [mMatchedDelegate onMatcheeLeft];
 }
 
 - (void)onMatcheeDelivery:(CMMatcheeDelivery*)delivery

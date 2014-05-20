@@ -34,18 +34,23 @@ static double const DRAGGING_CANCEL_INTERVAL = 3.0; // seconds
         [self addSubview:self.mCircleView];
         [self addSubview:self.mSquareView];
         
-        self.mCircleView.hidden = YES;
-        self.mSquareView.hidden = YES;
-        
-        self.mGroupId = @"";
-        self.mShapeBeingDraggedOnOtherSide = @"";
-        
-        self.backgroundColor = [UIColor clearColor];
+        [self resetScreen];
         
         mDeliveryHelper = [[PinchAndDragDeliveryHelper alloc] init];
         
     }
     return self;
+}
+
+-(void)resetScreen
+{
+    self.mCircleView.hidden = YES;
+    self.mSquareView.hidden = YES;
+    
+    self.mGroupId = @"";
+    self.mShapeBeingDraggedOnOtherSide = @"";
+    
+    self.backgroundColor = [UIColor clearColor];
 }
 
 -(void)setMatchedDelegate:(id<PinchAndDragMatchedProtocol>)matchedDelegate
@@ -108,6 +113,12 @@ static double const DRAGGING_CANCEL_INTERVAL = 3.0; // seconds
     mMyCointossValue = drand48();
     [mDeliveryHelper sendCointoss:mMyCointossValue ToGroup:self.mGroupId];
     [mMatchedDelegate onMatchedInGroup:groupId];
+}
+
+-(void)onMatcheeLeft
+{
+    [self resetScreen];
+    [mMatchedDelegate onMatcheeLeft];
 }
 
 #pragma mark - touch delegate methods
