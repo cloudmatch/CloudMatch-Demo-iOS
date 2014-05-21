@@ -177,8 +177,7 @@ static double const DRAGGING_CANCEL_INTERVAL = 3.0; // seconds
         if (self.mMovingView != nil) {
             
             CGPoint touchLoc = [touch locationInView:self];
-            [self animateView:self.mMovingView toPosition:touchLoc];
-            
+
             // if the shape has been dropped on a side, make it invisible for a certain period
             if (touchLoc.x < SIDE_AREA_WIDTH || touchLoc.x > (self.frame.size.width - SIDE_AREA_WIDTH)) {
                 NSLog(@"shape dropped on the side, making it invisible for a while");
@@ -191,6 +190,11 @@ static double const DRAGGING_CANCEL_INTERVAL = 3.0; // seconds
                 }
                 [self performSelector:@selector(resetShapeToPosition:) withObject:[NSValue valueWithCGPoint:tempos ] afterDelay:SHAPE_VISIBILITY_RESET_INTERVAL];
             } else if (![self.mGroupId isEqualToString:@""]) {
+                if ([self.mMovingShape isEqualToString:CIRCLE_SHAPE]) {
+                    self.mMovingView.center = mCircleInitialPosition;
+                } else {
+                    self.mMovingView.center = mSquareInitialPosition;
+                }
                 if ([self.mShapeBeingDraggedOnOtherSide isEqualToString:@""]) {
                     // I was dragging one of my shapes and dropped it in the center
                     // move it back to initial position and send drag stop
@@ -200,11 +204,6 @@ static double const DRAGGING_CANCEL_INTERVAL = 3.0; // seconds
                     // I acquired a shape
                     NSLog(@"I acquired a shape");
                     [mDeliveryHelper sendShapeReceivedAck:self.mShapeBeingDraggedOnOtherSide ToGroup:self.mGroupId];
-                }
-                if ([self.mMovingShape isEqualToString:CIRCLE_SHAPE]) {
-                    self.mMovingView.center = mCircleInitialPosition;
-                } else {
-                    self.mMovingView.center = mSquareInitialPosition;
                 }
             }
         }
@@ -225,10 +224,7 @@ static double const DRAGGING_CANCEL_INTERVAL = 3.0; // seconds
 
 -(void)animateView:(UIView *)theView toPosition:(CGPoint)thePosition
 {
-	[UIView beginAnimations:nil context:NULL];
-	[UIView setAnimationDuration:0.15];
 	theView.center = thePosition;
-	[UIView commitAnimations];
 }
 
 #pragma mark - onMovementDelegate
