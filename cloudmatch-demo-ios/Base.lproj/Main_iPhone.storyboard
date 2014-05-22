@@ -149,7 +149,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbU-aV-dtQ">
-                                <rect key="frame" x="28" y="184" width="36" height="30"/>
+                                <rect key="frame" x="257" y="183" width="36" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -159,7 +159,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vm7-2f-7x5">
-                                <rect key="frame" x="83" y="184" width="210" height="30"/>
+                                <rect key="frame" x="28" y="184" width="210" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -359,8 +359,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Pinch icon" width="958" height="946"/>
-        <image name="Swipe icon" width="958" height="950"/>
+        <image name="Pinch icon" width="805" height="945"/>
+        <image name="Swipe icon" width="809" height="918"/>
         <image name="logo_with_border" width="512" height="345"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
