@@ -32,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6I-s9-621">
-                                <rect key="frame" x="41" y="213" width="227" height="44"/>
+                                <rect key="frame" x="41" y="369" width="227" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80959154211956519" green="0.80959154211956519" blue="0.80959154211956519" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Swipe &amp; Send">
@@ -44,7 +44,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3x-BA-JOu">
-                                <rect key="frame" x="41" y="265" width="227" height="44"/>
+                                <rect key="frame" x="41" y="213" width="227" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80959154209999995" green="0.80959154209999995" blue="0.80959154209999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Pinch &amp; View">
@@ -68,7 +68,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qot-6f-ked">
-                                <rect key="frame" x="41" y="369" width="227" height="44"/>
+                                <rect key="frame" x="41" y="265" width="227" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80959154209999995" green="0.80959154209999995" blue="0.80959154209999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Pinch &amp; Drag">
