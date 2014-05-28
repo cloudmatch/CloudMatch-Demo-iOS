@@ -83,8 +83,12 @@
 # pragma mark ui actions
 - (IBAction)sendButtonAction:(id)sender {
     NSString *textToSend = [[NSString alloc] initWithString: self.textToSend.text];
+    if ([textToSend length] == 0) {
+        textToSend = @"Received empty message.";
+    }
     NSLog(@"going to send: %@ to group %@", textToSend, mGroupId);
     [[CMCloudMatchClient sharedInstance] deliverPayload:textToSend toGroup:mGroupId];
+    textToSend = @"";
 }
 
 # pragma mark - onServerEventDelegate
