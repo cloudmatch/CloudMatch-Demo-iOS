@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3E02DFB61917D8D8008DEA48 /* CMDAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E02DFB51917D8D8008DEA48 /* CMDAboutViewController.m */; };
 		3E02DFB91917E5D4008DEA48 /* ColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E02DFB81917E5D4008DEA48 /* ColorUtil.m */; };
-		3E19B5E418E034D800CA6947 /* SwipeAndSendDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E19B5E318E034D800CA6947 /* SwipeAndSendDrawingView.m */; };
 		3E19B5E818E034EF00CA6947 /* SwipeAndColorDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E19B5E718E034EF00CA6947 /* SwipeAndColorDrawingView.m */; };
 		3E19B5EC18E03B2800CA6947 /* ColorTables.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E19B5EB18E03B2800CA6947 /* ColorTables.m */; };
 		3E19EACC1927AA31009534C6 /* Eerste.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 3E19EACB1927AA31009534C6 /* Eerste.gpx */; };
@@ -24,7 +23,6 @@
 		3E36730F18E175D20061ADFA /* PinchAndDragDeliveryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E36730E18E175D20061ADFA /* PinchAndDragDeliveryHelper.m */; };
 		3E36731518E17AEC0061ADFA /* PinchAndDragConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E36731418E17AEC0061ADFA /* PinchAndDragConsts.m */; };
 		3E36731B18E197210061ADFA /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E36731A18E197210061ADFA /* CircleView.m */; };
-		3E6A9DE418D4A86300E3290A /* SwipeAndSendUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6A9DE318D4A86300E3290A /* SwipeAndSendUIViewController.m */; };
 		3E6A9DE818D4A87A00E3290A /* PinchAndViewUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6A9DE718D4A87A00E3290A /* PinchAndViewUIViewController.m */; };
 		3E6EFF6F18E1FBE4003ABD68 /* SquareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EFF6E18E1FBE4003ABD68 /* SquareView.m */; };
 		3E709B8419275C2D0022A4D4 /* CoffeeRoom.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 3E709B8319275C2D0022A4D4 /* CoffeeRoom.gpx */; };
@@ -69,8 +67,6 @@
 		3E02DFB51917D8D8008DEA48 /* CMDAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CMDAboutViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3E02DFB71917E5D4008DEA48 /* ColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ColorUtil.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		3E02DFB81917E5D4008DEA48 /* ColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ColorUtil.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		3E19B5E218E034D800CA6947 /* SwipeAndSendDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeAndSendDrawingView.h; sourceTree = "<group>"; };
-		3E19B5E318E034D800CA6947 /* SwipeAndSendDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeAndSendDrawingView.m; sourceTree = "<group>"; };
 		3E19B5E618E034EF00CA6947 /* SwipeAndColorDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeAndColorDrawingView.h; sourceTree = "<group>"; };
 		3E19B5E718E034EF00CA6947 /* SwipeAndColorDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeAndColorDrawingView.m; sourceTree = "<group>"; };
 		3E19B5EA18E03B2800CA6947 /* ColorTables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ColorTables.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -97,8 +93,6 @@
 		3E36731918E197210061ADFA /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CircleView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		3E36731A18E197210061ADFA /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CircleView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3E3E50AE1912863100F7F5B1 /* SwipeAndColorMatchedProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SwipeAndColorMatchedProtocol.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		3E6A9DE218D4A86300E3290A /* SwipeAndSendUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SwipeAndSendUIViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		3E6A9DE318D4A86300E3290A /* SwipeAndSendUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SwipeAndSendUIViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3E6A9DE618D4A87A00E3290A /* PinchAndViewUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PinchAndViewUIViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		3E6A9DE718D4A87A00E3290A /* PinchAndViewUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PinchAndViewUIViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3E6EFF6D18E1FBE4003ABD68 /* SquareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SquareView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -175,15 +169,6 @@
 				3E02DFB51917D8D8008DEA48 /* CMDAboutViewController.m */,
 			);
 			path = About;
-			sourceTree = "<group>";
-		};
-		3E19B5E118E034D800CA6947 /* SwipeAndSendDrawingView */ = {
-			isa = PBXGroup;
-			children = (
-				3E19B5E218E034D800CA6947 /* SwipeAndSendDrawingView.h */,
-				3E19B5E318E034D800CA6947 /* SwipeAndSendDrawingView.m */,
-			);
-			path = SwipeAndSendDrawingView;
 			sourceTree = "<group>";
 		};
 		3E19B5E518E034EF00CA6947 /* SwipeAndColorDrawingView */ = {
@@ -275,16 +260,6 @@
 				3E3E50AE1912863100F7F5B1 /* SwipeAndColorMatchedProtocol.h */,
 			);
 			path = SwipeAndColorMatchedProtocol;
-			sourceTree = "<group>";
-		};
-		3E6A9DE118D4A86300E3290A /* SwipeAndSend */ = {
-			isa = PBXGroup;
-			children = (
-				3E19B5E118E034D800CA6947 /* SwipeAndSendDrawingView */,
-				3E6A9DE218D4A86300E3290A /* SwipeAndSendUIViewController.h */,
-				3E6A9DE318D4A86300E3290A /* SwipeAndSendUIViewController.m */,
-			);
-			path = SwipeAndSend;
 			sourceTree = "<group>";
 		};
 		3E6A9DE518D4A87A00E3290A /* PinchAndView */ = {
@@ -389,7 +364,6 @@
 				3E3672FE18E170410061ADFA /* PinchAndDrag */,
 				3EBE8EB918E02F7E0038823A /* SwipeAndColor */,
 				3E6A9DE518D4A87A00E3290A /* PinchAndView */,
-				3E6A9DE118D4A86300E3290A /* SwipeAndSend */,
 			);
 			path = Demos;
 			sourceTree = "<group>";
@@ -524,7 +498,6 @@
 				3E81BD8C18CF75D000CC3D89 /* CMDAppDelegate.m in Sources */,
 				3E6A9DE818D4A87A00E3290A /* PinchAndViewUIViewController.m in Sources */,
 				3E36731518E17AEC0061ADFA /* PinchAndDragConsts.m in Sources */,
-				3E6A9DE418D4A86300E3290A /* SwipeAndSendUIViewController.m in Sources */,
 				3EBE8EBC18E02F970038823A /* SwipeAndColorViewController.m in Sources */,
 				3E36730218E170580061ADFA /* PinchAndDragViewController.m in Sources */,
 				3E02DFB91917E5D4008DEA48 /* ColorUtil.m in Sources */,
@@ -533,7 +506,6 @@
 				3E6EFF6F18E1FBE4003ABD68 /* SquareView.m in Sources */,
 				3E36730C18E175AC0061ADFA /* PinchAndDragServerEventDelegate.m in Sources */,
 				3ED8EBA418F13EE2005B40FC /* MyRectView.m in Sources */,
-				3E19B5E418E034D800CA6947 /* SwipeAndSendDrawingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
