@@ -123,8 +123,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pinch icon" translatesAutoresizingMaskIntoConstraints="NO" id="FxA-MW-BUW">
-                                <rect key="frame" x="58" y="168" width="204" height="204"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pinch Icon iOS" translatesAutoresizingMaskIntoConstraints="NO" id="FxA-MW-BUW">
+                                <rect key="frame" x="-24" y="60" width="368" height="393"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -153,19 +153,19 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swipe &amp; Color" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWQ-ac-cE4">
-                                <rect key="frame" x="31" y="98" width="110" height="21"/>
+                                <rect key="frame" x="31" y="82" width="110" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swipe across 2 to 8 devices and tap the colors!" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="246" translatesAutoresizingMaskIntoConstraints="NO" id="HQv-FE-Njh">
-                                <rect key="frame" x="31" y="127" width="246" height="63"/>
+                                <rect key="frame" x="31" y="111" width="246" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Swipe icon" translatesAutoresizingMaskIntoConstraints="NO" id="Bur-w2-cAG">
-                                <rect key="frame" x="53" y="228" width="202" height="202"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Swipe 3 Icon iOS" translatesAutoresizingMaskIntoConstraints="NO" id="Bur-w2-cAG">
+                                <rect key="frame" x="-17" y="177" width="354" height="290"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -204,17 +204,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pinch icon" translatesAutoresizingMaskIntoConstraints="NO" id="1O3-uv-ohJ">
-                                <rect key="frame" x="58" y="235" width="204" height="204"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pinch Icon iOS" translatesAutoresizingMaskIntoConstraints="NO" id="Amu-0m-4iP">
+                                <rect key="frame" x="-27" y="125" width="368" height="393"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="q56-Zy-eBT"/>
-                    <connections>
-                        <outlet property="mPinchView" destination="1O3-uv-ohJ" id="pDi-ML-dW8"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uyO-4k-tau" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -269,8 +266,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Pinch icon" width="805" height="945"/>
-        <image name="Swipe icon" width="809" height="918"/>
+        <image name="Pinch Icon iOS" width="320" height="480"/>
+        <image name="Swipe 3 Icon iOS" width="320" height="480"/>
         <image name="logo_with_border" width="512" height="345"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
