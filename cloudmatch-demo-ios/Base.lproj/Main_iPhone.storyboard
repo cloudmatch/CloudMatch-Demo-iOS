@@ -212,6 +212,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="q56-Zy-eBT"/>
+                    <connections>
+                        <outlet property="mPinchView" destination="Amu-0m-4iP" id="3qG-SG-Vn9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uyO-4k-tau" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
